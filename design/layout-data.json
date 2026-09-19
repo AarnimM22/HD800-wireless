@@ -1,0 +1,549 @@
+{
+  "extra": {
+    "J1": {
+      "dnp": false
+    },
+    "D1": {
+      "dnp": false
+    },
+    "R1": {
+      "dnp": false
+    },
+    "R2": {
+      "dnp": false
+    },
+    "R3": {
+      "dnp": false
+    },
+    "C1": {
+      "dnp": false
+    },
+    "R4": {
+      "dnp": false
+    },
+    "R5": {
+      "dnp": false
+    },
+    "R6": {
+      "dnp": false
+    },
+    "C2": {
+      "dnp": false
+    },
+    "C3": {
+      "dnp": false
+    },
+    "C4": {
+      "dnp": false
+    },
+    "Q3": {
+      "dnp": false
+    },
+    "R7": {
+      "dnp": false
+    },
+    "C5": {
+      "dnp": false
+    },
+    "Q4": {
+      "dnp": false
+    },
+    "R8": {
+      "dnp": false
+    },
+    "R9": {
+      "dnp": false
+    },
+    "U7": {
+      "dnp": false
+    },
+    "R10": {
+      "dnp": false
+    },
+    "R11": {
+      "dnp": false
+    },
+    "J4": {
+      "dnp": false
+    },
+    "L2": {
+      "dnp": false
+    },
+    "C6": {
+      "dnp": false
+    },
+    "C7": {
+      "dnp": false
+    },
+    "C8": {
+      "dnp": false
+    },
+    "BAT1": {
+      "dnp": false
+    },
+    "U6": {
+      "dnp": false
+    },
+    "R12": {
+      "dnp": false
+    },
+    "SW2": {
+      "dnp": false
+    },
+    "L1": {
+      "dnp": false
+    },
+    "R13": {
+      "dnp": false
+    },
+    "R14": {
+      "dnp": false
+    },
+    "C9": {
+      "dnp": false
+    },
+    "C10": {
+      "dnp": false
+    },
+    "C11": {
+      "dnp": false
+    },
+    "C12": {
+      "dnp": false
+    },
+    "Q1": {
+      "dnp": false
+    },
+    "R15": {
+      "dnp": false
+    },
+    "C13": {
+      "dnp": false
+    },
+    "Q2": {
+      "dnp": false
+    },
+    "R16": {
+      "dnp": false
+    },
+    "R17": {
+      "dnp": false
+    },
+    "U4": {
+      "dnp": false
+    },
+    "C14": {
+      "dnp": false
+    },
+    "C15": {
+      "dnp": false
+    },
+    "C16": {
+      "dnp": false
+    },
+    "C17": {
+      "dnp": false
+    },
+    "C18": {
+      "dnp": false
+    },
+    "R18": {
+      "dnp": false
+    },
+    "R19": {
+      "dnp": false
+    },
+    "R20": {
+      "dnp": false
+    },
+    "R21": {
+      "dnp": false
+    },
+    "C19": {
+      "dnp": false
+    },
+    "U1": {
+      "dnp": false
+    },
+    "Y1": {
+      "dnp": false
+    },
+    "C20": {
+      "dnp": true
+    },
+    "C21": {
+      "dnp": true
+    },
+    "L3": {
+      "dnp": false
+    },
+    "L4": {
+      "dnp": false
+    },
+    "C22": {
+      "dnp": false
+    },
+    "C23": {
+      "dnp": false
+    },
+    "C24": {
+      "dnp": false
+    },
+    "C25": {
+      "dnp": false
+    },
+    "C26": {
+      "dnp": false
+    },
+    "C27": {
+      "dnp": false
+    },
+    "C28": {
+      "dnp": false
+    },
+    "C29": {
+      "dnp": false
+    },
+    "C30": {
+      "dnp": false
+    },
+    "C31": {
+      "dnp": false
+    },
+    "C32": {
+      "dnp": false
+    },
+    "C33": {
+      "dnp": false
+    },
+    "C34": {
+      "dnp": false
+    },
+    "C35": {
+      "dnp": false
+    },
+    "C36": {
+      "dnp": false
+    },
+    "C37": {
+      "dnp": false
+    },
+    "L5": {
+      "dnp": false
+    },
+    "C38": {
+      "dnp": false
+    },
+    "R22": {
+      "dnp": false
+    },
+    "C39": {
+      "dnp": true
+    },
+    "ANT1": {
+      "dnp": false
+    },
+    "J3": {
+      "dnp": false
+    },
+    "R23": {
+      "dnp": false
+    },
+    "R24": {
+      "dnp": false
+    },
+    "R25": {
+      "dnp": false
+    },
+    "R26": {
+      "dnp": false
+    },
+    "R27": {
+      "dnp": false
+    },
+    "R28": {
+      "dnp": false
+    },
+    "R29": {
+      "dnp": false
+    },
+    "R30": {
+      "dnp": false
+    },
+    "R31": {
+      "dnp": false
+    },
+    "R32": {
+      "dnp": false
+    },
+    "JP9": {
+      "dnp": false
+    },
+    "R33": {
+      "dnp": false
+    },
+    "C40": {
+      "dnp": false
+    },
+    "R34": {
+      "dnp": false
+    },
+    "R35": {
+      "dnp": false
+    },
+    "U2": {
+      "dnp": false
+    },
+    "R36": {
+      "dnp": false
+    },
+    "C41": {
+      "dnp": false
+    },
+    "C42": {
+      "dnp": false
+    },
+    "C43": {
+      "dnp": false
+    },
+    "C44": {
+      "dnp": false
+    },
+    "C45": {
+      "dnp": false
+    },
+    "C46": {
+      "dnp": false
+    },
+    "C47": {
+      "dnp": false
+    },
+    "C48": {
+      "dnp": false
+    },
+    "C49": {
+      "dnp": false
+    },
+    "C50": {
+      "dnp": false
+    },
+    "C51": {
+      "dnp": false
+    },
+    "C52": {
+      "dnp": false
+    },
+    "C53": {
+      "dnp": false
+    },
+    "C54": {
+      "dnp": false
+    },
+    "C55": {
+      "dnp": false
+    },
+    "C56": {
+      "dnp": false
+    },
+    "U3": {
+      "dnp": false
+    },
+    "R37": {
+      "dnp": false
+    },
+    "C57": {
+      "dnp": false
+    },
+    "C58": {
+      "dnp": false
+    },
+    "C59": {
+      "dnp": false
+    },
+    "C60": {
+      "dnp": false
+    },
+    "C61": {
+      "dnp": false
+    },
+    "C62": {
+      "dnp": false
+    },
+    "C63": {
+      "dnp": false
+    },
+    "C64": {
+      "dnp": false
+    },
+    "C65": {
+      "dnp": false
+    },
+    "C66": {
+      "dnp": false
+    },
+    "C67": {
+      "dnp": false
+    },
+    "C68": {
+      "dnp": false
+    },
+    "C69": {
+      "dnp": false
+    },
+    "C70": {
+      "dnp": false
+    },
+    "C71": {
+      "dnp": false
+    },
+    "C72": {
+      "dnp": false
+    },
+    "U5": {
+      "dnp": false
+    },
+    "R38": {
+      "dnp": false
+    },
+    "JP1": {
+      "dnp": false
+    },
+    "JP2": {
+      "dnp": false
+    },
+    "R39": {
+      "dnp": false
+    },
+    "JP3": {
+      "dnp": false
+    },
+    "JP4": {
+      "dnp": false
+    },
+    "C73": {
+      "dnp": false
+    },
+    "C74": {
+      "dnp": false
+    },
+    "C75": {
+      "dnp": false
+    },
+    "C76": {
+      "dnp": false
+    },
+    "C77": {
+      "dnp": false
+    },
+    "C78": {
+      "dnp": false
+    },
+    "C79": {
+      "dnp": false
+    },
+    "C80": {
+      "dnp": false
+    },
+    "U8": {
+      "dnp": false
+    },
+    "R40": {
+      "dnp": false
+    },
+    "JP5": {
+      "dnp": false
+    },
+    "JP6": {
+      "dnp": false
+    },
+    "R41": {
+      "dnp": false
+    },
+    "JP7": {
+      "dnp": false
+    },
+    "JP8": {
+      "dnp": false
+    },
+    "C81": {
+      "dnp": false
+    },
+    "C82": {
+      "dnp": false
+    },
+    "C83": {
+      "dnp": false
+    },
+    "C84": {
+      "dnp": false
+    },
+    "C85": {
+      "dnp": false
+    },
+    "C86": {
+      "dnp": false
+    },
+    "C87": {
+      "dnp": false
+    },
+    "C88": {
+      "dnp": false
+    },
+    "TP1": {
+      "dnp": false
+    },
+    "TP2": {
+      "dnp": false
+    },
+    "TP3": {
+      "dnp": false
+    },
+    "TP4": {
+      "dnp": false
+    }
+  },
+  "notes": {
+    "01_USB_Charging": [
+      "IP2312 fixed 4.20V variant only; 135k sets nominal 1A. Confirm selected cell permits 1C charge.",
+      "Q3 default OFF. Enable charging only after valid USB-C >=1.5A advertisement; never assume 2A.",
+      "No system power path: charge only with playback stopped; verify termination with MCU load.",
+      "External protected 1S pack required. J4: bonded 100k NTC; confirm thermistor curve and thresholds.",
+      "L2 changed to 1uH per charger reference; select >=4A saturation part and verify temperature."
+    ],
+    "02_Power": [
+      "TLV62568: 0.6V x (1 + 200k/100k) = 1.8V. L1 remains 2.2uH.",
+      "AMP_EN high turns Q2/Q1 on; LM2776 generates approximately -VBAT, subject to load droop.",
+      "Split rails are battery dependent. Limit output in firmware; >250mW into 18 ohms is NOT validated.",
+      "SW2 closes to force system OFF. Battery charger remains independent."
+    ],
+    "03_MCU_RF": [
+      "Firmware: use HFCLKAUDIO 12.288MHz for 48kHz family; do not feed raw 32MHz to DACs.",
+      "Configure internal HFXO load for CL=8pF crystal; external loading footprints DNP.",
+      "Copy Nordic QKAA RF/DC-DC reference layout. Tune antenna in final earcup; RF values preliminary.",
+      "JP9 is the fixed mode strap: 1-2 Eco, 2-3 Turbo. Firmware enables AMP rails only in Turbo.",
+      "Normal-voltage nRF supply: VDDH and DCCH tied to VDD. Fit DC/DC inductors and enable regulators.",
+      "Unused GPIO / unused interfaces explicitly NC; use calibrated LFRC."
+    ],
+    "04_DAC_Left": [
+      "Configure left mono differential mode; HPOUTA=L+, HPOUTB=L-. ADR low.",
+      "HPREFA/B return to quiet common analog ground; never connect them to opposite output.",
+      "VP on battery; VA filtered by 2R/10uF; VCP, VD and VL on 1.8V.",
+      "CS43131 QFN pad and footprint dimensions require independent package verification."
+    ],
+    "05_DAC_Right": [
+      "Configure right mono differential mode; HPOUTA=R+, HPOUTB=R-. ADR high.",
+      "HPREFA/B return to quiet common analog ground; never connect them to opposite output.",
+      "VP on battery; VA filtered by 2R/10uF; VCP, VD and VL on 1.8V.",
+      "Validate reset/interrupt levels against the VP-domain specifications before fabrication."
+    ],
+    "06_Balanced_Output": [
+      "No analog muxes: headphone type is selected once with solder links before installation.",
+      "ECO / HD800: bridge each 3-pad selector 1-2; leave all four TURBO INPUT links open; JP9=1-2.",
+      "TURBO / planar: bridge each 3-pad selector 2-3; close all four TURBO INPUT links; JP9=2-3.",
+      "Eco may omit U5/U8, U4, Q1/Q2 and amplifier support parts entirely. Turbo populates them.",
+      "TP1-TP4 are direct driver solder pads. There is no jack and no common audio return.",
+      "L-/R- are driven outputs. OPA1688 current does not establish the original 250mW/18ohm target.",
+      "Configuration links and JP9 must agree before power-up; this design does not hot-switch modes."
+    ]
+  }
+}

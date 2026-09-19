@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "HD800_Custom") (type "KiCad") (uri "${KIPRJMOD}/HD800_Custom.kicad_sym") (options "") (descr "Project custom symbols from manufacturer pin tables")))

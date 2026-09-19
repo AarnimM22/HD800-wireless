@@ -1,0 +1,665 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "4a294c1d-7b6b-5adf-89fe-3c9e8a07da42")
+	(paper "A2")
+	(title_block
+		(title "06 Balanced Output")
+		(date "2026-09-16")
+		(rev "A - REVIEW DRAFT")
+		(comment 1 "NOT FOR FABRICATION - see DESIGN_NOTES.md")
+	)
+	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "L-/R- are driven outputs. OPA1688 current does not establish the original 250mW/18ohm target."
+		(exclude_from_sim no)
+		(at 242.062 191.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "202ca5ba-28df-5fff-895c-fdd7873aa4c7")
+	)
+	(text "REVIEW DRAFT  |  Labels are electrical connections across all sheets"
+		(exclude_from_sim no)
+		(at 245.364 98.424 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "2398c2b9-aaf4-5a58-a86a-2e542e27f4d7")
+	)
+	(text "Eco may omit U5/U8, U4, Q1/Q2 and amplifier support parts entirely. Turbo populates them."
+		(exclude_from_sim no)
+		(at 242.062 181.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "3713fce1-f9c8-58c1-921e-4fa13b381c90")
+	)
+	(text "TP1-TP4 are direct driver solder pads. There is no jack and no common audio return."
+		(exclude_from_sim no)
+		(at 242.062 186.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "47f9053c-228e-59be-b2b5-19c44c7eb576")
+	)
+	(text "No analog muxes: headphone type is selected once with solder links before installation."
+		(exclude_from_sim no)
+		(at 242.062 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "5cdf20f1-9350-521b-b3a0-eda6b2f910e7")
+	)
+	(text "06 BALANCED OUTPUT"
+		(exclude_from_sim no)
+		(at 245.364 90.424 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left top)
+		)
+		(uuid "7fd63cd3-25b8-5f67-bad4-b9706d391314")
+	)
+	(text "TURBO / planar: bridge each 3-pad selector 2-3; close all four TURBO INPUT links; JP9=2-3."
+		(exclude_from_sim no)
+		(at 242.062 176.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "93cf423f-db4b-5b54-b9c1-7d0c2975535b")
+	)
+	(text "ECO / HD800: bridge each 3-pad selector 1-2; leave all four TURBO INPUT links open; JP9=1-2."
+		(exclude_from_sim no)
+		(at 242.062 171.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "ad1a2ee3-7f67-5979-8af5-9bfc30a25470")
+	)
+	(text "Configuration links and JP9 must agree before power-up; this design does not hot-switch modes."
+		(exclude_from_sim no)
+		(at 242.062 196.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "e1b500bf-1439-5084-95ea-cbcb1b3c77bd")
+	)
+	(wire
+		(pts
+			(xy 248.92 114.3) (xy 254 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "049377dc-7985-42f8-8e52-7d251e2f57a4")
+	)
+	(wire
+		(pts
+			(xy 248.92 104.14) (xy 254 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a1869df-97de-4bad-8f48-37a55309435d")
+	)
+	(wire
+		(pts
+			(xy 248.92 109.22) (xy 254 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6764181-ba03-4ec2-bdaf-8969c22390d4")
+	)
+	(wire
+		(pts
+			(xy 248.92 119.38) (xy 254 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8feb6d9-7112-41fd-b76b-914d31a8aca5")
+	)
+	(hierarchical_label "L+"
+		(shape input)
+		(at 248.92 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1430d050-189a-4ac3-aa7b-8aeb83e914d5")
+	)
+	(hierarchical_label "R+"
+		(shape input)
+		(at 248.92 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c340b75e-97a5-4bbb-b6c2-4c1c6bad8a58")
+	)
+	(hierarchical_label "R-"
+		(shape input)
+		(at 248.92 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c813d7ea-7fd4-4dc2-90b7-35fbd75c694b")
+	)
+	(hierarchical_label "L-"
+		(shape input)
+		(at 248.92 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e04be76d-f91c-4137-a6ab-f7744059e097")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 254 119.38 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "647bac71-72b0-503f-a712-d98dd66e9441")
+		(property "Reference" "TP4"
+			(at 261.112 119.38 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RIGHT DRIVER -"
+			(at 271.78 119.38 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1.5x3mm"
+			(at 254 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 254 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Design_note" "RIGHT DRIVER - / DIRECT SOLDER"
+			(at 254 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6568e490-3275-5679-801d-eb0364c8d5e1")
+		)
+		(instances
+			(project "HD800-wireless"
+				(path "/89d30dcd-e991-4e32-b460-83f5b37a2b9e/97598ef3-a45e-58e8-9576-699d09198929"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 254 114.3 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "64cfc935-59a1-5ca5-92b1-019e5f0d79ed")
+		(property "Reference" "TP3"
+			(at 261.112 114.3 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RIGHT DRIVER +"
+			(at 271.78 114.3 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1.5x3mm"
+			(at 254 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 254 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Design_note" "RIGHT DRIVER + / DIRECT SOLDER"
+			(at 254 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b2b088b0-f3c6-5366-afe0-ac84d2541ae1")
+		)
+		(instances
+			(project "HD800-wireless"
+				(path "/89d30dcd-e991-4e32-b460-83f5b37a2b9e/97598ef3-a45e-58e8-9576-699d09198929"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 254 109.22 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8cf2dd77-57ab-5264-addf-92c3b9c3765f")
+		(property "Reference" "TP2"
+			(at 261.112 108.966 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LEFT DRIVER -"
+			(at 271.272 108.966 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1.5x3mm"
+			(at 254 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 254 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Design_note" "LEFT DRIVER - / DIRECT SOLDER"
+			(at 254 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3ee4aed2-53a5-579b-96ab-41e465a803ef")
+		)
+		(instances
+			(project "HD800-wireless"
+				(path "/89d30dcd-e991-4e32-b460-83f5b37a2b9e/97598ef3-a45e-58e8-9576-699d09198929"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 254 104.14 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "af5fc7a4-e87f-5c00-8c33-31df83721248")
+		(property "Reference" "TP1"
+			(at 261.112 104.14 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LEFT DRIVER +"
+			(at 271.272 104.14 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1.5x3mm"
+			(at 254 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 254 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Design_note" "LEFT DRIVER + / DIRECT SOLDER"
+			(at 254 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7a1e0e81-06f2-5346-a9f9-11bec432725f")
+		)
+		(instances
+			(project "HD800-wireless"
+				(path "/89d30dcd-e991-4e32-b460-83f5b37a2b9e/97598ef3-a45e-58e8-9576-699d09198929"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

@@ -1,0 +1,66 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-16T11:32:07",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/89d30dcd-e991-4e32-b460-83f5b37a2b9e",
+            "violations": []
+        },
+        {
+            "path": "/01 USB Charging/",
+            "uuid_path": "/89d30dcd-e991-4e32-b460-83f5b37a2b9e/d5171146-81ac-50f5-b93a-ab681b83857c",
+            "violations": []
+        },
+        {
+            "path": "/02 Power/",
+            "uuid_path": "/89d30dcd-e991-4e32-b460-83f5b37a2b9e/aa8f104f-0427-5016-940d-ba3d32a4c4f9",
+            "violations": []
+        },
+        {
+            "path": "/03 MCU RF/",
+            "uuid_path": "/89d30dcd-e991-4e32-b460-83f5b37a2b9e/2df60d33-9df0-5117-87a2-3f989449f29a",
+            "violations": []
+        },
+        {
+            "path": "/04 DAC Left/",
+            "uuid_path": "/89d30dcd-e991-4e32-b460-83f5b37a2b9e/0b179a54-e48b-53c6-a8a3-a45582e839ab",
+            "violations": []
+        },
+        {
+            "path": "/05 DAC Right/",
+            "uuid_path": "/89d30dcd-e991-4e32-b460-83f5b37a2b9e/309be683-1c36-55e2-afaa-b432bc21e75f",
+            "violations": []
+        },
+        {
+            "path": "/06 Balanced Output/",
+            "uuid_path": "/89d30dcd-e991-4e32-b460-83f5b37a2b9e/97598ef3-a45e-58e8-9576-699d09198929",
+            "violations": []
+        }
+    ],
+    "source": "HD800-wireless.kicad_sch"
+}

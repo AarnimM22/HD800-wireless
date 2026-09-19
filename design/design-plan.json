@@ -1,0 +1,3887 @@
+{
+  "spec": "HD800 wireless conversion from supplied system overview; assembly-configured direct or buffered output.",
+  "summary": "Draft circuit for engineering review; see sheet notes and DESIGN_NOTES.md.",
+  "sheets": [
+    {
+      "name": "01_USB_Charging",
+      "title": "01 USB Charging",
+      "size": "A2"
+    },
+    {
+      "name": "02_Power",
+      "title": "02 Power",
+      "size": "A2"
+    },
+    {
+      "name": "03_MCU_RF",
+      "title": "03 MCU RF",
+      "size": "A2"
+    },
+    {
+      "name": "04_DAC_Left",
+      "title": "04 DAC Left",
+      "size": "A2"
+    },
+    {
+      "name": "05_DAC_Right",
+      "title": "05 DAC Right",
+      "size": "A2"
+    },
+    {
+      "name": "06_Balanced_Output",
+      "title": "06 Balanced Output",
+      "size": "A2"
+    }
+  ],
+  "parts": [
+    {
+      "refdes": "J1",
+      "lib_ref": "Connector:USB_C_Receptacle_USB2.0_16P",
+      "value": "USB4105-GF-A",
+      "sheet": "01_USB_Charging",
+      "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
+    },
+    {
+      "refdes": "D1",
+      "lib_ref": "Power_Protection:USBLC6-2SC6",
+      "value": "USBLC6-2SC6",
+      "sheet": "01_USB_Charging",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6"
+    },
+    {
+      "refdes": "R1",
+      "lib_ref": "Device:R",
+      "value": "5.1k 1%",
+      "sheet": "01_USB_Charging",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R2",
+      "lib_ref": "Device:R",
+      "value": "100k 1%",
+      "sheet": "01_USB_Charging",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R3",
+      "lib_ref": "Device:R",
+      "value": "100k 1%",
+      "sheet": "01_USB_Charging",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "C1",
+      "lib_ref": "Device:C",
+      "value": "1nF / 10V",
+      "sheet": "01_USB_Charging",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "R4",
+      "lib_ref": "Device:R",
+      "value": "5.1k 1%",
+      "sheet": "01_USB_Charging",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R5",
+      "lib_ref": "Device:R",
+      "value": "100k 1%",
+      "sheet": "01_USB_Charging",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R6",
+      "lib_ref": "Device:R",
+      "value": "100k 1%",
+      "sheet": "01_USB_Charging",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "C2",
+      "lib_ref": "Device:C",
+      "value": "1nF / 10V",
+      "sheet": "01_USB_Charging",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C3",
+      "lib_ref": "Device:C",
+      "value": "1uF / 10V",
+      "sheet": "01_USB_Charging",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C4",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "01_USB_Charging",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "Q3",
+      "lib_ref": "Transistor_FET:AO3401A",
+      "value": "AO3401A",
+      "sheet": "01_USB_Charging",
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    {
+      "refdes": "R7",
+      "lib_ref": "Device:R",
+      "value": "100k",
+      "sheet": "01_USB_Charging",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "C5",
+      "lib_ref": "Device:C",
+      "value": "10nF / 10V",
+      "sheet": "01_USB_Charging",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "Q4",
+      "lib_ref": "Transistor_BJT:MMBT3904",
+      "value": "MMBT3904",
+      "sheet": "01_USB_Charging",
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    {
+      "refdes": "R8",
+      "lib_ref": "Device:R",
+      "value": "10k",
+      "sheet": "01_USB_Charging",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R9",
+      "lib_ref": "Device:R",
+      "value": "100k",
+      "sheet": "01_USB_Charging",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "U7",
+      "lib_ref": "HD800_Custom:IP2312",
+      "value": "IP2312 4.20V ONLY",
+      "sheet": "01_USB_Charging",
+      "footprint": "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+    },
+    {
+      "refdes": "R10",
+      "lib_ref": "Device:R",
+      "value": "1k",
+      "sheet": "01_USB_Charging",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R11",
+      "lib_ref": "Device:R",
+      "value": "135k 1% / 1A",
+      "sheet": "01_USB_Charging",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "J4",
+      "lib_ref": "Connector_Generic:Conn_01x02",
+      "value": "BATTERY NTC 100k B3950",
+      "sheet": "01_USB_Charging",
+      "footprint": "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
+    },
+    {
+      "refdes": "L2",
+      "lib_ref": "Device:L",
+      "value": "1uH / Isat >=4A",
+      "sheet": "01_USB_Charging"
+    },
+    {
+      "refdes": "C6",
+      "lib_ref": "Device:C",
+      "value": "22uF / 10V",
+      "sheet": "01_USB_Charging",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "C7",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "01_USB_Charging",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C8",
+      "lib_ref": "Device:C",
+      "value": "22uF / 10V",
+      "sheet": "01_USB_Charging",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "BAT1",
+      "lib_ref": "Connector_Generic:Conn_01x02",
+      "value": "PROTECTED 1S 4.20V LiPo",
+      "sheet": "01_USB_Charging",
+      "footprint": "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
+    },
+    {
+      "refdes": "U6",
+      "lib_ref": "Regulator_Switching:TLV62568DBV",
+      "value": "TLV62568DBVR",
+      "sheet": "02_Power",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5"
+    },
+    {
+      "refdes": "R12",
+      "lib_ref": "Device:R",
+      "value": "100k",
+      "sheet": "02_Power",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "SW2",
+      "lib_ref": "Switch:SW_SPST",
+      "value": "SYSTEM OFF (close to turn off)",
+      "sheet": "02_Power"
+    },
+    {
+      "refdes": "L1",
+      "lib_ref": "Device:L",
+      "value": "2.2uH DFE201210U-2R2M=P2",
+      "sheet": "02_Power",
+      "footprint": "Inductor_SMD:L_0805_2012Metric"
+    },
+    {
+      "refdes": "R13",
+      "lib_ref": "Device:R",
+      "value": "200k 1%",
+      "sheet": "02_Power",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R14",
+      "lib_ref": "Device:R",
+      "value": "100k 1%",
+      "sheet": "02_Power",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "C9",
+      "lib_ref": "Device:C",
+      "value": "10uF / 10V",
+      "sheet": "02_Power",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "C10",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "02_Power",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C11",
+      "lib_ref": "Device:C",
+      "value": "10uF / 10V",
+      "sheet": "02_Power",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "C12",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "02_Power",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "Q1",
+      "lib_ref": "Transistor_FET:AO3401A",
+      "value": "AO3401A",
+      "sheet": "02_Power",
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    {
+      "refdes": "R15",
+      "lib_ref": "Device:R",
+      "value": "100k",
+      "sheet": "02_Power",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "C13",
+      "lib_ref": "Device:C",
+      "value": "10nF / 10V",
+      "sheet": "02_Power",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "Q2",
+      "lib_ref": "Transistor_BJT:MMBT3904",
+      "value": "MMBT3904",
+      "sheet": "02_Power",
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    {
+      "refdes": "R16",
+      "lib_ref": "Device:R",
+      "value": "10k",
+      "sheet": "02_Power",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R17",
+      "lib_ref": "Device:R",
+      "value": "100k",
+      "sheet": "02_Power",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "U4",
+      "lib_ref": "Regulator_SwitchedCapacitor:LM2776",
+      "value": "LM2776DBVR",
+      "sheet": "02_Power",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6"
+    },
+    {
+      "refdes": "C14",
+      "lib_ref": "Device:C",
+      "value": "2.2uF / 10V",
+      "sheet": "02_Power",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C15",
+      "lib_ref": "Device:C",
+      "value": "2.2uF / 10V",
+      "sheet": "02_Power",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C16",
+      "lib_ref": "Device:C",
+      "value": "2.2uF / 10V",
+      "sheet": "02_Power",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C17",
+      "lib_ref": "Device:C",
+      "value": "10uF / 10V",
+      "sheet": "02_Power",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "C18",
+      "lib_ref": "Device:C",
+      "value": "10uF / 10V",
+      "sheet": "02_Power",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "R18",
+      "lib_ref": "Device:R",
+      "value": "100k",
+      "sheet": "02_Power",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R19",
+      "lib_ref": "Device:R",
+      "value": "100k",
+      "sheet": "02_Power",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R20",
+      "lib_ref": "Device:R",
+      "value": "330k 1%",
+      "sheet": "02_Power",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R21",
+      "lib_ref": "Device:R",
+      "value": "100k 1%",
+      "sheet": "02_Power",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "C19",
+      "lib_ref": "Device:C",
+      "value": "10nF / 10V",
+      "sheet": "02_Power",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "U1",
+      "lib_ref": "MCU_Nordic:nRF5340-QKxx",
+      "value": "nRF5340-QKAA",
+      "sheet": "03_MCU_RF",
+      "footprint": "Package_DFN_QFN:Nordic_AQFN-94-1EP_7x7mm_P0.4mm"
+    },
+    {
+      "refdes": "Y1",
+      "lib_ref": "Device:Crystal_GND24",
+      "value": "32MHz / CL=8pF / 10ppm",
+      "sheet": "03_MCU_RF",
+      "footprint": "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm"
+    },
+    {
+      "refdes": "C20",
+      "lib_ref": "Device:C",
+      "value": "DNP / external load option",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C21",
+      "lib_ref": "Device:C",
+      "value": "DNP / external load option",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "L3",
+      "lib_ref": "Device:L",
+      "value": "10uH / 80mA",
+      "sheet": "03_MCU_RF",
+      "footprint": "Inductor_SMD:L_0603_1608Metric"
+    },
+    {
+      "refdes": "L4",
+      "lib_ref": "Device:L",
+      "value": "10uH / 80mA",
+      "sheet": "03_MCU_RF",
+      "footprint": "Inductor_SMD:L_0603_1608Metric"
+    },
+    {
+      "refdes": "C22",
+      "lib_ref": "Device:C",
+      "value": "1uF / 10V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C23",
+      "lib_ref": "Device:C",
+      "value": "1uF / 10V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C24",
+      "lib_ref": "Device:C",
+      "value": "2.2nF / 10V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C25",
+      "lib_ref": "Device:C",
+      "value": "1uF / 10V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C26",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C27",
+      "lib_ref": "Device:C",
+      "value": "1uF / 10V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C28",
+      "lib_ref": "Device:C",
+      "value": "4.7uF / 10V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "C29",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C30",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C31",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C32",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C33",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C34",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C35",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C36",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C37",
+      "lib_ref": "Device:C",
+      "value": "4.7uF / 10V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "L5",
+      "lib_ref": "Device:L",
+      "value": "2.2nH / RF C0G reference",
+      "sheet": "03_MCU_RF",
+      "footprint": "Inductor_SMD:L_0603_1608Metric"
+    },
+    {
+      "refdes": "C38",
+      "lib_ref": "Device:C",
+      "value": "0.7pF C0G / 10V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "R22",
+      "lib_ref": "Device:R",
+      "value": "0R / antenna tuning",
+      "sheet": "03_MCU_RF",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "C39",
+      "lib_ref": "Device:C",
+      "value": "DNP / tune in enclosure",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "ANT1",
+      "lib_ref": "Device:Antenna",
+      "value": "2450AT43B0100001E",
+      "sheet": "03_MCU_RF"
+    },
+    {
+      "refdes": "J3",
+      "lib_ref": "Connector_Generic:Conn_01x05",
+      "value": "SWD DEBUG / 1.8V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical"
+    },
+    {
+      "refdes": "R23",
+      "lib_ref": "Device:R",
+      "value": "10k",
+      "sheet": "03_MCU_RF",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R24",
+      "lib_ref": "Device:R",
+      "value": "10k",
+      "sheet": "03_MCU_RF",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R25",
+      "lib_ref": "Device:R",
+      "value": "4.7k",
+      "sheet": "03_MCU_RF",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R26",
+      "lib_ref": "Device:R",
+      "value": "4.7k",
+      "sheet": "03_MCU_RF",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R27",
+      "lib_ref": "Device:R",
+      "value": "4.7k",
+      "sheet": "03_MCU_RF",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R28",
+      "lib_ref": "Device:R",
+      "value": "4.7k",
+      "sheet": "03_MCU_RF",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R29",
+      "lib_ref": "Device:R",
+      "value": "22R",
+      "sheet": "03_MCU_RF",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R30",
+      "lib_ref": "Device:R",
+      "value": "22R",
+      "sheet": "03_MCU_RF",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R31",
+      "lib_ref": "Device:R",
+      "value": "22R",
+      "sheet": "03_MCU_RF",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R32",
+      "lib_ref": "Device:R",
+      "value": "22R",
+      "sheet": "03_MCU_RF",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "JP9",
+      "lib_ref": "Jumper:SolderJumper_3_Open",
+      "value": "MODE: 1-2 ECO / 2-3 TURBO",
+      "sheet": "03_MCU_RF",
+      "footprint": "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
+    },
+    {
+      "refdes": "R33",
+      "lib_ref": "Device:R",
+      "value": "100k",
+      "sheet": "03_MCU_RF",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "C40",
+      "lib_ref": "Device:C",
+      "value": "10nF / 10V",
+      "sheet": "03_MCU_RF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "R34",
+      "lib_ref": "Device:R",
+      "value": "100k",
+      "sheet": "03_MCU_RF",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "R35",
+      "lib_ref": "Device:R",
+      "value": "100k",
+      "sheet": "03_MCU_RF",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "U2",
+      "lib_ref": "HD800_Custom:CS43131_CNZ",
+      "value": "CS43131-CNZR / L mono",
+      "sheet": "04_DAC_Left"
+    },
+    {
+      "refdes": "R36",
+      "lib_ref": "Device:R",
+      "value": "2R 1%",
+      "sheet": "04_DAC_Left",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "C41",
+      "lib_ref": "Device:C",
+      "value": "10uF / 10V",
+      "sheet": "04_DAC_Left",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "C42",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "04_DAC_Left",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C43",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "04_DAC_Left",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C44",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "04_DAC_Left",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C45",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "04_DAC_Left",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C46",
+      "lib_ref": "Device:C",
+      "value": "2.2uF / 10V",
+      "sheet": "04_DAC_Left",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C47",
+      "lib_ref": "Device:C",
+      "value": "4.7uF / 10V",
+      "sheet": "04_DAC_Left",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "C48",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "04_DAC_Left",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C49",
+      "lib_ref": "Device:C",
+      "value": "15uF / 10V",
+      "sheet": "04_DAC_Left",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "C50",
+      "lib_ref": "Device:C",
+      "value": "15uF / 10V",
+      "sheet": "04_DAC_Left",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "C51",
+      "lib_ref": "Device:C",
+      "value": "2.2uF / 10V",
+      "sheet": "04_DAC_Left",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C52",
+      "lib_ref": "Device:C",
+      "value": "2.2uF / 10V",
+      "sheet": "04_DAC_Left",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C53",
+      "lib_ref": "Device:C",
+      "value": "2.2uF / 10V",
+      "sheet": "04_DAC_Left",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C54",
+      "lib_ref": "Device:C",
+      "value": "2.2uF / 10V",
+      "sheet": "04_DAC_Left",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C55",
+      "lib_ref": "Device:C",
+      "value": "2.2uF / 10V",
+      "sheet": "04_DAC_Left",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C56",
+      "lib_ref": "Device:C",
+      "value": "2.2uF / 10V",
+      "sheet": "04_DAC_Left",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "U3",
+      "lib_ref": "HD800_Custom:CS43131_CNZ",
+      "value": "CS43131-CNZR / R mono",
+      "sheet": "05_DAC_Right"
+    },
+    {
+      "refdes": "R37",
+      "lib_ref": "Device:R",
+      "value": "2R 1%",
+      "sheet": "05_DAC_Right",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "C57",
+      "lib_ref": "Device:C",
+      "value": "10uF / 10V",
+      "sheet": "05_DAC_Right",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "C58",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "05_DAC_Right",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C59",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "05_DAC_Right",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C60",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "05_DAC_Right",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C61",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "05_DAC_Right",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C62",
+      "lib_ref": "Device:C",
+      "value": "2.2uF / 10V",
+      "sheet": "05_DAC_Right",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C63",
+      "lib_ref": "Device:C",
+      "value": "4.7uF / 10V",
+      "sheet": "05_DAC_Right",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "C64",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "05_DAC_Right",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C65",
+      "lib_ref": "Device:C",
+      "value": "15uF / 10V",
+      "sheet": "05_DAC_Right",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "C66",
+      "lib_ref": "Device:C",
+      "value": "15uF / 10V",
+      "sheet": "05_DAC_Right",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "C67",
+      "lib_ref": "Device:C",
+      "value": "2.2uF / 10V",
+      "sheet": "05_DAC_Right",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C68",
+      "lib_ref": "Device:C",
+      "value": "2.2uF / 10V",
+      "sheet": "05_DAC_Right",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C69",
+      "lib_ref": "Device:C",
+      "value": "2.2uF / 10V",
+      "sheet": "05_DAC_Right",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C70",
+      "lib_ref": "Device:C",
+      "value": "2.2uF / 10V",
+      "sheet": "05_DAC_Right",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C71",
+      "lib_ref": "Device:C",
+      "value": "2.2uF / 10V",
+      "sheet": "05_DAC_Right",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C72",
+      "lib_ref": "Device:C",
+      "value": "2.2uF / 10V",
+      "sheet": "05_DAC_Right",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "U5",
+      "lib_ref": "HD800_Custom:OPA1688IDR",
+      "value": "OPA1688IDR / L",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+    },
+    {
+      "refdes": "R38",
+      "lib_ref": "Device:R",
+      "value": "1R / tune stability",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "JP1",
+      "lib_ref": "Jumper:SolderJumper_3_Open",
+      "value": "CONFIG LP: 1-2 ECO / 2-3 TURBO",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
+    },
+    {
+      "refdes": "JP2",
+      "lib_ref": "Jumper:SolderJumper_2_Open",
+      "value": "TURBO INPUT LP: CLOSE",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+    },
+    {
+      "refdes": "R39",
+      "lib_ref": "Device:R",
+      "value": "1R / tune stability",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "JP3",
+      "lib_ref": "Jumper:SolderJumper_3_Open",
+      "value": "CONFIG LN: 1-2 ECO / 2-3 TURBO",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
+    },
+    {
+      "refdes": "JP4",
+      "lib_ref": "Jumper:SolderJumper_2_Open",
+      "value": "TURBO INPUT LN: CLOSE",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+    },
+    {
+      "refdes": "C73",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C74",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C75",
+      "lib_ref": "Device:C",
+      "value": "4.7uF / 10V",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "C76",
+      "lib_ref": "Device:C",
+      "value": "4.7uF / 10V",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "C77",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C78",
+      "lib_ref": "Device:C",
+      "value": "1uF / 10V",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C79",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C80",
+      "lib_ref": "Device:C",
+      "value": "1uF / 10V",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "U8",
+      "lib_ref": "HD800_Custom:OPA1688IDR",
+      "value": "OPA1688IDR / R",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+    },
+    {
+      "refdes": "R40",
+      "lib_ref": "Device:R",
+      "value": "1R / tune stability",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "JP5",
+      "lib_ref": "Jumper:SolderJumper_3_Open",
+      "value": "CONFIG RP: 1-2 ECO / 2-3 TURBO",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
+    },
+    {
+      "refdes": "JP6",
+      "lib_ref": "Jumper:SolderJumper_2_Open",
+      "value": "TURBO INPUT RP: CLOSE",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+    },
+    {
+      "refdes": "R41",
+      "lib_ref": "Device:R",
+      "value": "1R / tune stability",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "refdes": "JP7",
+      "lib_ref": "Jumper:SolderJumper_3_Open",
+      "value": "CONFIG RN: 1-2 ECO / 2-3 TURBO",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
+    },
+    {
+      "refdes": "JP8",
+      "lib_ref": "Jumper:SolderJumper_2_Open",
+      "value": "TURBO INPUT RN: CLOSE",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+    },
+    {
+      "refdes": "C81",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C82",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C83",
+      "lib_ref": "Device:C",
+      "value": "4.7uF / 10V",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "C84",
+      "lib_ref": "Device:C",
+      "value": "4.7uF / 10V",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "refdes": "C85",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C86",
+      "lib_ref": "Device:C",
+      "value": "1uF / 10V",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C87",
+      "lib_ref": "Device:C",
+      "value": "100nF / 10V",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "C88",
+      "lib_ref": "Device:C",
+      "value": "1uF / 10V",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "refdes": "TP1",
+      "lib_ref": "Connector:TestPoint",
+      "value": "LEFT DRIVER + / DIRECT SOLDER",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Connector_Wire:SolderWirePad_1x01_SMD_1.5x3mm"
+    },
+    {
+      "refdes": "TP2",
+      "lib_ref": "Connector:TestPoint",
+      "value": "LEFT DRIVER - / DIRECT SOLDER",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Connector_Wire:SolderWirePad_1x01_SMD_1.5x3mm"
+    },
+    {
+      "refdes": "TP3",
+      "lib_ref": "Connector:TestPoint",
+      "value": "RIGHT DRIVER + / DIRECT SOLDER",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Connector_Wire:SolderWirePad_1x01_SMD_1.5x3mm"
+    },
+    {
+      "refdes": "TP4",
+      "lib_ref": "Connector:TestPoint",
+      "value": "RIGHT DRIVER - / DIRECT SOLDER",
+      "sheet": "06_Balanced_Output",
+      "footprint": "Connector_Wire:SolderWirePad_1x01_SMD_1.5x3mm"
+    }
+  ],
+  "nets": [
+    {
+      "name": "GND",
+      "pins": [
+        {
+          "refdes": "J1",
+          "pin": "A1"
+        },
+        {
+          "refdes": "J1",
+          "pin": "A12"
+        },
+        {
+          "refdes": "J1",
+          "pin": "B1"
+        },
+        {
+          "refdes": "J1",
+          "pin": "B12"
+        },
+        {
+          "refdes": "J1",
+          "pin": "SH"
+        },
+        {
+          "refdes": "D1",
+          "pin": "2"
+        },
+        {
+          "refdes": "R1",
+          "pin": "2"
+        },
+        {
+          "refdes": "R3",
+          "pin": "2"
+        },
+        {
+          "refdes": "C1",
+          "pin": "2"
+        },
+        {
+          "refdes": "R4",
+          "pin": "2"
+        },
+        {
+          "refdes": "R6",
+          "pin": "2"
+        },
+        {
+          "refdes": "C2",
+          "pin": "2"
+        },
+        {
+          "refdes": "C3",
+          "pin": "2"
+        },
+        {
+          "refdes": "C4",
+          "pin": "2"
+        },
+        {
+          "refdes": "Q4",
+          "pin": "2"
+        },
+        {
+          "refdes": "R9",
+          "pin": "2"
+        },
+        {
+          "refdes": "U7",
+          "pin": "9"
+        },
+        {
+          "refdes": "R11",
+          "pin": "2"
+        },
+        {
+          "refdes": "J4",
+          "pin": "2"
+        },
+        {
+          "refdes": "C6",
+          "pin": "2"
+        },
+        {
+          "refdes": "C7",
+          "pin": "2"
+        },
+        {
+          "refdes": "C8",
+          "pin": "2"
+        },
+        {
+          "refdes": "BAT1",
+          "pin": "2"
+        },
+        {
+          "refdes": "U6",
+          "pin": "2"
+        },
+        {
+          "refdes": "SW2",
+          "pin": "2"
+        },
+        {
+          "refdes": "R14",
+          "pin": "2"
+        },
+        {
+          "refdes": "C9",
+          "pin": "2"
+        },
+        {
+          "refdes": "C10",
+          "pin": "2"
+        },
+        {
+          "refdes": "C11",
+          "pin": "2"
+        },
+        {
+          "refdes": "C12",
+          "pin": "2"
+        },
+        {
+          "refdes": "Q2",
+          "pin": "2"
+        },
+        {
+          "refdes": "R17",
+          "pin": "2"
+        },
+        {
+          "refdes": "U4",
+          "pin": "2"
+        },
+        {
+          "refdes": "C15",
+          "pin": "2"
+        },
+        {
+          "refdes": "C16",
+          "pin": "2"
+        },
+        {
+          "refdes": "C17",
+          "pin": "2"
+        },
+        {
+          "refdes": "C18",
+          "pin": "2"
+        },
+        {
+          "refdes": "R18",
+          "pin": "2"
+        },
+        {
+          "refdes": "R19",
+          "pin": "2"
+        },
+        {
+          "refdes": "R21",
+          "pin": "2"
+        },
+        {
+          "refdes": "C19",
+          "pin": "2"
+        },
+        {
+          "refdes": "U1",
+          "pin": "EP"
+        },
+        {
+          "refdes": "Y1",
+          "pin": "2"
+        },
+        {
+          "refdes": "Y1",
+          "pin": "4"
+        },
+        {
+          "refdes": "C20",
+          "pin": "2"
+        },
+        {
+          "refdes": "C21",
+          "pin": "2"
+        },
+        {
+          "refdes": "C22",
+          "pin": "2"
+        },
+        {
+          "refdes": "C23",
+          "pin": "2"
+        },
+        {
+          "refdes": "C24",
+          "pin": "2"
+        },
+        {
+          "refdes": "C25",
+          "pin": "2"
+        },
+        {
+          "refdes": "C26",
+          "pin": "2"
+        },
+        {
+          "refdes": "C27",
+          "pin": "2"
+        },
+        {
+          "refdes": "C28",
+          "pin": "2"
+        },
+        {
+          "refdes": "C29",
+          "pin": "2"
+        },
+        {
+          "refdes": "C30",
+          "pin": "2"
+        },
+        {
+          "refdes": "C31",
+          "pin": "2"
+        },
+        {
+          "refdes": "C32",
+          "pin": "2"
+        },
+        {
+          "refdes": "C33",
+          "pin": "2"
+        },
+        {
+          "refdes": "C34",
+          "pin": "2"
+        },
+        {
+          "refdes": "C35",
+          "pin": "2"
+        },
+        {
+          "refdes": "C36",
+          "pin": "2"
+        },
+        {
+          "refdes": "C37",
+          "pin": "2"
+        },
+        {
+          "refdes": "C38",
+          "pin": "2"
+        },
+        {
+          "refdes": "C39",
+          "pin": "2"
+        },
+        {
+          "refdes": "J3",
+          "pin": "5"
+        },
+        {
+          "refdes": "JP9",
+          "pin": "1"
+        },
+        {
+          "refdes": "R33",
+          "pin": "2"
+        },
+        {
+          "refdes": "C40",
+          "pin": "2"
+        },
+        {
+          "refdes": "R34",
+          "pin": "2"
+        },
+        {
+          "refdes": "R35",
+          "pin": "2"
+        },
+        {
+          "refdes": "U2",
+          "pin": "8"
+        },
+        {
+          "refdes": "U2",
+          "pin": "13"
+        },
+        {
+          "refdes": "U2",
+          "pin": "17"
+        },
+        {
+          "refdes": "U2",
+          "pin": "19"
+        },
+        {
+          "refdes": "U2",
+          "pin": "30"
+        },
+        {
+          "refdes": "U2",
+          "pin": "35"
+        },
+        {
+          "refdes": "U2",
+          "pin": "36"
+        },
+        {
+          "refdes": "U2",
+          "pin": "41"
+        },
+        {
+          "refdes": "C41",
+          "pin": "2"
+        },
+        {
+          "refdes": "C42",
+          "pin": "2"
+        },
+        {
+          "refdes": "C43",
+          "pin": "2"
+        },
+        {
+          "refdes": "C44",
+          "pin": "2"
+        },
+        {
+          "refdes": "C45",
+          "pin": "2"
+        },
+        {
+          "refdes": "C46",
+          "pin": "2"
+        },
+        {
+          "refdes": "C47",
+          "pin": "2"
+        },
+        {
+          "refdes": "C48",
+          "pin": "2"
+        },
+        {
+          "refdes": "C51",
+          "pin": "2"
+        },
+        {
+          "refdes": "C55",
+          "pin": "2"
+        },
+        {
+          "refdes": "C56",
+          "pin": "2"
+        },
+        {
+          "refdes": "U3",
+          "pin": "8"
+        },
+        {
+          "refdes": "U3",
+          "pin": "13"
+        },
+        {
+          "refdes": "U3",
+          "pin": "17"
+        },
+        {
+          "refdes": "U3",
+          "pin": "19"
+        },
+        {
+          "refdes": "U3",
+          "pin": "35"
+        },
+        {
+          "refdes": "U3",
+          "pin": "36"
+        },
+        {
+          "refdes": "U3",
+          "pin": "41"
+        },
+        {
+          "refdes": "C57",
+          "pin": "2"
+        },
+        {
+          "refdes": "C58",
+          "pin": "2"
+        },
+        {
+          "refdes": "C59",
+          "pin": "2"
+        },
+        {
+          "refdes": "C60",
+          "pin": "2"
+        },
+        {
+          "refdes": "C61",
+          "pin": "2"
+        },
+        {
+          "refdes": "C62",
+          "pin": "2"
+        },
+        {
+          "refdes": "C63",
+          "pin": "2"
+        },
+        {
+          "refdes": "C64",
+          "pin": "2"
+        },
+        {
+          "refdes": "C67",
+          "pin": "2"
+        },
+        {
+          "refdes": "C71",
+          "pin": "2"
+        },
+        {
+          "refdes": "C72",
+          "pin": "2"
+        },
+        {
+          "refdes": "C73",
+          "pin": "2"
+        },
+        {
+          "refdes": "C74",
+          "pin": "2"
+        },
+        {
+          "refdes": "C75",
+          "pin": "2"
+        },
+        {
+          "refdes": "C76",
+          "pin": "2"
+        },
+        {
+          "refdes": "C77",
+          "pin": "2"
+        },
+        {
+          "refdes": "C78",
+          "pin": "2"
+        },
+        {
+          "refdes": "C79",
+          "pin": "2"
+        },
+        {
+          "refdes": "C80",
+          "pin": "2"
+        },
+        {
+          "refdes": "C81",
+          "pin": "2"
+        },
+        {
+          "refdes": "C82",
+          "pin": "2"
+        },
+        {
+          "refdes": "C83",
+          "pin": "2"
+        },
+        {
+          "refdes": "C84",
+          "pin": "2"
+        },
+        {
+          "refdes": "C85",
+          "pin": "2"
+        },
+        {
+          "refdes": "C86",
+          "pin": "2"
+        },
+        {
+          "refdes": "C87",
+          "pin": "2"
+        },
+        {
+          "refdes": "C88",
+          "pin": "2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": true
+    },
+    {
+      "name": "VBUS",
+      "pins": [
+        {
+          "refdes": "J1",
+          "pin": "A4"
+        },
+        {
+          "refdes": "J1",
+          "pin": "A9"
+        },
+        {
+          "refdes": "J1",
+          "pin": "B4"
+        },
+        {
+          "refdes": "J1",
+          "pin": "B9"
+        },
+        {
+          "refdes": "D1",
+          "pin": "5"
+        },
+        {
+          "refdes": "C3",
+          "pin": "1"
+        },
+        {
+          "refdes": "C4",
+          "pin": "1"
+        },
+        {
+          "refdes": "Q3",
+          "pin": "2"
+        },
+        {
+          "refdes": "R7",
+          "pin": "1"
+        },
+        {
+          "refdes": "C5",
+          "pin": "2"
+        },
+        {
+          "refdes": "U1",
+          "pin": "A5"
+        }
+      ],
+      "is_power": true,
+      "is_ground": false
+    },
+    {
+      "name": "CC1",
+      "pins": [
+        {
+          "refdes": "J1",
+          "pin": "A5"
+        },
+        {
+          "refdes": "R1",
+          "pin": "1"
+        },
+        {
+          "refdes": "R2",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "CC2",
+      "pins": [
+        {
+          "refdes": "J1",
+          "pin": "B5"
+        },
+        {
+          "refdes": "R4",
+          "pin": "1"
+        },
+        {
+          "refdes": "R5",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "USB_DP",
+      "pins": [
+        {
+          "refdes": "J1",
+          "pin": "A6"
+        },
+        {
+          "refdes": "J1",
+          "pin": "B6"
+        },
+        {
+          "refdes": "D1",
+          "pin": "1"
+        },
+        {
+          "refdes": "D1",
+          "pin": "6"
+        },
+        {
+          "refdes": "U1",
+          "pin": "B2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "USB_DM",
+      "pins": [
+        {
+          "refdes": "J1",
+          "pin": "A7"
+        },
+        {
+          "refdes": "J1",
+          "pin": "B7"
+        },
+        {
+          "refdes": "D1",
+          "pin": "3"
+        },
+        {
+          "refdes": "D1",
+          "pin": "4"
+        },
+        {
+          "refdes": "U1",
+          "pin": "B4"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "CC1_ADC",
+      "pins": [
+        {
+          "refdes": "R2",
+          "pin": "2"
+        },
+        {
+          "refdes": "R3",
+          "pin": "1"
+        },
+        {
+          "refdes": "C1",
+          "pin": "1"
+        },
+        {
+          "refdes": "U1",
+          "pin": "V2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "CC2_ADC",
+      "pins": [
+        {
+          "refdes": "R5",
+          "pin": "2"
+        },
+        {
+          "refdes": "R6",
+          "pin": "1"
+        },
+        {
+          "refdes": "C2",
+          "pin": "1"
+        },
+        {
+          "refdes": "U1",
+          "pin": "Y2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "CHG_GATE",
+      "pins": [
+        {
+          "refdes": "Q3",
+          "pin": "1"
+        },
+        {
+          "refdes": "R7",
+          "pin": "2"
+        },
+        {
+          "refdes": "C5",
+          "pin": "1"
+        },
+        {
+          "refdes": "Q4",
+          "pin": "3"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "CHG_5V",
+      "pins": [
+        {
+          "refdes": "Q3",
+          "pin": "3"
+        },
+        {
+          "refdes": "U7",
+          "pin": "8"
+        },
+        {
+          "refdes": "C6",
+          "pin": "1"
+        },
+        {
+          "refdes": "C7",
+          "pin": "1"
+        }
+      ],
+      "is_power": true,
+      "is_ground": false
+    },
+    {
+      "name": "CHG_BASE",
+      "pins": [
+        {
+          "refdes": "Q4",
+          "pin": "1"
+        },
+        {
+          "refdes": "R8",
+          "pin": "2"
+        },
+        {
+          "refdes": "R9",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "CHG_EN",
+      "pins": [
+        {
+          "refdes": "R8",
+          "pin": "1"
+        },
+        {
+          "refdes": "U1",
+          "pin": "AK24"
+        },
+        {
+          "refdes": "R35",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "CHG_TEST",
+      "pins": [
+        {
+          "refdes": "U7",
+          "pin": "2"
+        },
+        {
+          "refdes": "R10",
+          "pin": "2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "BAT_NTC",
+      "pins": [
+        {
+          "refdes": "U7",
+          "pin": "4"
+        },
+        {
+          "refdes": "J4",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "VBAT",
+      "pins": [
+        {
+          "refdes": "U7",
+          "pin": "5"
+        },
+        {
+          "refdes": "R10",
+          "pin": "1"
+        },
+        {
+          "refdes": "L2",
+          "pin": "2"
+        },
+        {
+          "refdes": "C8",
+          "pin": "1"
+        },
+        {
+          "refdes": "BAT1",
+          "pin": "1"
+        },
+        {
+          "refdes": "U6",
+          "pin": "4"
+        },
+        {
+          "refdes": "R12",
+          "pin": "1"
+        },
+        {
+          "refdes": "C9",
+          "pin": "1"
+        },
+        {
+          "refdes": "C10",
+          "pin": "1"
+        },
+        {
+          "refdes": "Q1",
+          "pin": "2"
+        },
+        {
+          "refdes": "R15",
+          "pin": "1"
+        },
+        {
+          "refdes": "C13",
+          "pin": "2"
+        },
+        {
+          "refdes": "R20",
+          "pin": "1"
+        },
+        {
+          "refdes": "U2",
+          "pin": "26"
+        },
+        {
+          "refdes": "C47",
+          "pin": "1"
+        },
+        {
+          "refdes": "C48",
+          "pin": "1"
+        },
+        {
+          "refdes": "U3",
+          "pin": "26"
+        },
+        {
+          "refdes": "C63",
+          "pin": "1"
+        },
+        {
+          "refdes": "C64",
+          "pin": "1"
+        }
+      ],
+      "is_power": true,
+      "is_ground": false
+    },
+    {
+      "name": "CHG_ISET",
+      "pins": [
+        {
+          "refdes": "U7",
+          "pin": "6"
+        },
+        {
+          "refdes": "R11",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "CHG_SW",
+      "pins": [
+        {
+          "refdes": "U7",
+          "pin": "7"
+        },
+        {
+          "refdes": "L2",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "SYS_EN",
+      "pins": [
+        {
+          "refdes": "U6",
+          "pin": "1"
+        },
+        {
+          "refdes": "R12",
+          "pin": "2"
+        },
+        {
+          "refdes": "SW2",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "BUCK_SW",
+      "pins": [
+        {
+          "refdes": "U6",
+          "pin": "3"
+        },
+        {
+          "refdes": "L1",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "BUCK_FB",
+      "pins": [
+        {
+          "refdes": "U6",
+          "pin": "5"
+        },
+        {
+          "refdes": "R13",
+          "pin": "2"
+        },
+        {
+          "refdes": "R14",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "VDD_1V8",
+      "pins": [
+        {
+          "refdes": "L1",
+          "pin": "2"
+        },
+        {
+          "refdes": "R13",
+          "pin": "1"
+        },
+        {
+          "refdes": "C11",
+          "pin": "1"
+        },
+        {
+          "refdes": "C12",
+          "pin": "1"
+        },
+        {
+          "refdes": "U1",
+          "pin": "E1"
+        },
+        {
+          "refdes": "U1",
+          "pin": "J1"
+        },
+        {
+          "refdes": "U1",
+          "pin": "A19"
+        },
+        {
+          "refdes": "U1",
+          "pin": "AC1"
+        },
+        {
+          "refdes": "U1",
+          "pin": "AG1"
+        },
+        {
+          "refdes": "U1",
+          "pin": "AJ31"
+        },
+        {
+          "refdes": "U1",
+          "pin": "AL3"
+        },
+        {
+          "refdes": "U1",
+          "pin": "AL7"
+        },
+        {
+          "refdes": "U1",
+          "pin": "AL11"
+        },
+        {
+          "refdes": "U1",
+          "pin": "AL17"
+        },
+        {
+          "refdes": "U1",
+          "pin": "AL25"
+        },
+        {
+          "refdes": "U1",
+          "pin": "B8"
+        },
+        {
+          "refdes": "U1",
+          "pin": "B28"
+        },
+        {
+          "refdes": "U1",
+          "pin": "C1"
+        },
+        {
+          "refdes": "U1",
+          "pin": "E31"
+        },
+        {
+          "refdes": "U1",
+          "pin": "L1"
+        },
+        {
+          "refdes": "U1",
+          "pin": "N31"
+        },
+        {
+          "refdes": "U1",
+          "pin": "U1"
+        },
+        {
+          "refdes": "C29",
+          "pin": "1"
+        },
+        {
+          "refdes": "C30",
+          "pin": "1"
+        },
+        {
+          "refdes": "C31",
+          "pin": "1"
+        },
+        {
+          "refdes": "C32",
+          "pin": "1"
+        },
+        {
+          "refdes": "C33",
+          "pin": "1"
+        },
+        {
+          "refdes": "C34",
+          "pin": "1"
+        },
+        {
+          "refdes": "C35",
+          "pin": "1"
+        },
+        {
+          "refdes": "C36",
+          "pin": "1"
+        },
+        {
+          "refdes": "C37",
+          "pin": "1"
+        },
+        {
+          "refdes": "J3",
+          "pin": "1"
+        },
+        {
+          "refdes": "R23",
+          "pin": "1"
+        },
+        {
+          "refdes": "R24",
+          "pin": "1"
+        },
+        {
+          "refdes": "R25",
+          "pin": "1"
+        },
+        {
+          "refdes": "R26",
+          "pin": "1"
+        },
+        {
+          "refdes": "R27",
+          "pin": "1"
+        },
+        {
+          "refdes": "R28",
+          "pin": "1"
+        },
+        {
+          "refdes": "JP9",
+          "pin": "3"
+        },
+        {
+          "refdes": "U2",
+          "pin": "4"
+        },
+        {
+          "refdes": "U2",
+          "pin": "25"
+        },
+        {
+          "refdes": "U2",
+          "pin": "31"
+        },
+        {
+          "refdes": "R36",
+          "pin": "1"
+        },
+        {
+          "refdes": "C43",
+          "pin": "1"
+        },
+        {
+          "refdes": "C44",
+          "pin": "1"
+        },
+        {
+          "refdes": "C45",
+          "pin": "1"
+        },
+        {
+          "refdes": "C46",
+          "pin": "1"
+        },
+        {
+          "refdes": "U3",
+          "pin": "4"
+        },
+        {
+          "refdes": "U3",
+          "pin": "25"
+        },
+        {
+          "refdes": "U3",
+          "pin": "30"
+        },
+        {
+          "refdes": "U3",
+          "pin": "31"
+        },
+        {
+          "refdes": "R37",
+          "pin": "1"
+        },
+        {
+          "refdes": "C59",
+          "pin": "1"
+        },
+        {
+          "refdes": "C60",
+          "pin": "1"
+        },
+        {
+          "refdes": "C61",
+          "pin": "1"
+        },
+        {
+          "refdes": "C62",
+          "pin": "1"
+        },
+        {
+          "refdes": "C77",
+          "pin": "1"
+        },
+        {
+          "refdes": "C78",
+          "pin": "1"
+        },
+        {
+          "refdes": "C79",
+          "pin": "1"
+        },
+        {
+          "refdes": "C80",
+          "pin": "1"
+        },
+        {
+          "refdes": "C85",
+          "pin": "1"
+        },
+        {
+          "refdes": "C86",
+          "pin": "1"
+        },
+        {
+          "refdes": "C87",
+          "pin": "1"
+        },
+        {
+          "refdes": "C88",
+          "pin": "1"
+        }
+      ],
+      "is_power": true,
+      "is_ground": false
+    },
+    {
+      "name": "AMP_GATE",
+      "pins": [
+        {
+          "refdes": "Q1",
+          "pin": "1"
+        },
+        {
+          "refdes": "R15",
+          "pin": "2"
+        },
+        {
+          "refdes": "C13",
+          "pin": "1"
+        },
+        {
+          "refdes": "Q2",
+          "pin": "3"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "AMP_VP",
+      "pins": [
+        {
+          "refdes": "Q1",
+          "pin": "3"
+        },
+        {
+          "refdes": "U4",
+          "pin": "3"
+        },
+        {
+          "refdes": "U4",
+          "pin": "4"
+        },
+        {
+          "refdes": "C15",
+          "pin": "1"
+        },
+        {
+          "refdes": "C17",
+          "pin": "1"
+        },
+        {
+          "refdes": "R18",
+          "pin": "1"
+        },
+        {
+          "refdes": "U5",
+          "pin": "8"
+        },
+        {
+          "refdes": "C73",
+          "pin": "1"
+        },
+        {
+          "refdes": "C75",
+          "pin": "1"
+        },
+        {
+          "refdes": "U8",
+          "pin": "8"
+        },
+        {
+          "refdes": "C81",
+          "pin": "1"
+        },
+        {
+          "refdes": "C83",
+          "pin": "1"
+        }
+      ],
+      "is_power": true,
+      "is_ground": false
+    },
+    {
+      "name": "AMP_BASE",
+      "pins": [
+        {
+          "refdes": "Q2",
+          "pin": "1"
+        },
+        {
+          "refdes": "R16",
+          "pin": "2"
+        },
+        {
+          "refdes": "R17",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "AMP_EN",
+      "pins": [
+        {
+          "refdes": "R16",
+          "pin": "1"
+        },
+        {
+          "refdes": "U1",
+          "pin": "AL19"
+        },
+        {
+          "refdes": "R34",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "AMP_VN",
+      "pins": [
+        {
+          "refdes": "U4",
+          "pin": "1"
+        },
+        {
+          "refdes": "C16",
+          "pin": "1"
+        },
+        {
+          "refdes": "C18",
+          "pin": "1"
+        },
+        {
+          "refdes": "R19",
+          "pin": "1"
+        },
+        {
+          "refdes": "U5",
+          "pin": "4"
+        },
+        {
+          "refdes": "C74",
+          "pin": "1"
+        },
+        {
+          "refdes": "C76",
+          "pin": "1"
+        },
+        {
+          "refdes": "U8",
+          "pin": "4"
+        },
+        {
+          "refdes": "C82",
+          "pin": "1"
+        },
+        {
+          "refdes": "C84",
+          "pin": "1"
+        }
+      ],
+      "is_power": true,
+      "is_ground": false
+    },
+    {
+      "name": "PUMP_CP",
+      "pins": [
+        {
+          "refdes": "U4",
+          "pin": "5"
+        },
+        {
+          "refdes": "C14",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "PUMP_CN",
+      "pins": [
+        {
+          "refdes": "U4",
+          "pin": "6"
+        },
+        {
+          "refdes": "C14",
+          "pin": "2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "VBAT_ADC",
+      "pins": [
+        {
+          "refdes": "R20",
+          "pin": "2"
+        },
+        {
+          "refdes": "R21",
+          "pin": "1"
+        },
+        {
+          "refdes": "C19",
+          "pin": "1"
+        },
+        {
+          "refdes": "U1",
+          "pin": "AB2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DECUSB",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "B6"
+        },
+        {
+          "refdes": "C28",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DECA",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "A13"
+        },
+        {
+          "refdes": "C27",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DECN",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "A23"
+        },
+        {
+          "refdes": "C26",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DECD",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "A15"
+        },
+        {
+          "refdes": "L4",
+          "pin": "2"
+        },
+        {
+          "refdes": "C25",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DECR",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "A27"
+        },
+        {
+          "refdes": "U1",
+          "pin": "G31"
+        },
+        {
+          "refdes": "L3",
+          "pin": "2"
+        },
+        {
+          "refdes": "C22",
+          "pin": "1"
+        },
+        {
+          "refdes": "C23",
+          "pin": "1"
+        },
+        {
+          "refdes": "C24",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DCC",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "A21"
+        },
+        {
+          "refdes": "L3",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DCCD",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "B10"
+        },
+        {
+          "refdes": "L4",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "HFXO_1",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "C31"
+        },
+        {
+          "refdes": "Y1",
+          "pin": "1"
+        },
+        {
+          "refdes": "C20",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "HFXO_2",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "B30"
+        },
+        {
+          "refdes": "Y1",
+          "pin": "3"
+        },
+        {
+          "refdes": "C21",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "RF_ANT",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "L31"
+        },
+        {
+          "refdes": "L5",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "SWDIO",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "AA31"
+        },
+        {
+          "refdes": "J3",
+          "pin": "2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "SWDCLK",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "W31"
+        },
+        {
+          "refdes": "J3",
+          "pin": "3"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "MCU_RESET",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "AC31"
+        },
+        {
+          "refdes": "J3",
+          "pin": "4"
+        },
+        {
+          "refdes": "R23",
+          "pin": "2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "I2S_MCLK_SRC",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "AL5"
+        },
+        {
+          "refdes": "R29",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "I2S_BCLK_SRC",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "AK8"
+        },
+        {
+          "refdes": "R30",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "I2S_LRCK_SRC",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "AK10"
+        },
+        {
+          "refdes": "R31",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "I2S_DATA_SRC",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "AL9"
+        },
+        {
+          "refdes": "R32",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "I2C_SDA",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "AE1"
+        },
+        {
+          "refdes": "R25",
+          "pin": "2"
+        },
+        {
+          "refdes": "U2",
+          "pin": "39"
+        },
+        {
+          "refdes": "U3",
+          "pin": "39"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "I2C_SCL",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "AF2"
+        },
+        {
+          "refdes": "R26",
+          "pin": "2"
+        },
+        {
+          "refdes": "U2",
+          "pin": "1"
+        },
+        {
+          "refdes": "U3",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_RESET",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "AK16"
+        },
+        {
+          "refdes": "R24",
+          "pin": "2"
+        },
+        {
+          "refdes": "U2",
+          "pin": "28"
+        },
+        {
+          "refdes": "U3",
+          "pin": "28"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_INT_L",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "AK18"
+        },
+        {
+          "refdes": "R27",
+          "pin": "2"
+        },
+        {
+          "refdes": "U2",
+          "pin": "27"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_INT_R",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "AK20"
+        },
+        {
+          "refdes": "R28",
+          "pin": "2"
+        },
+        {
+          "refdes": "U3",
+          "pin": "27"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "MODE_SENSE",
+      "pins": [
+        {
+          "refdes": "U1",
+          "pin": "AK22"
+        },
+        {
+          "refdes": "JP9",
+          "pin": "2"
+        },
+        {
+          "refdes": "R33",
+          "pin": "1"
+        },
+        {
+          "refdes": "C40",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "RF_50R",
+      "pins": [
+        {
+          "refdes": "L5",
+          "pin": "2"
+        },
+        {
+          "refdes": "C38",
+          "pin": "1"
+        },
+        {
+          "refdes": "R22",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "ANT_FEED",
+      "pins": [
+        {
+          "refdes": "R22",
+          "pin": "2"
+        },
+        {
+          "refdes": "C39",
+          "pin": "1"
+        },
+        {
+          "refdes": "ANT1",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "I2S_MCLK",
+      "pins": [
+        {
+          "refdes": "R29",
+          "pin": "2"
+        },
+        {
+          "refdes": "U2",
+          "pin": "37"
+        },
+        {
+          "refdes": "U3",
+          "pin": "37"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "I2S_BCLK",
+      "pins": [
+        {
+          "refdes": "R30",
+          "pin": "2"
+        },
+        {
+          "refdes": "U2",
+          "pin": "34"
+        },
+        {
+          "refdes": "U3",
+          "pin": "34"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "I2S_LRCK",
+      "pins": [
+        {
+          "refdes": "R31",
+          "pin": "2"
+        },
+        {
+          "refdes": "U2",
+          "pin": "38"
+        },
+        {
+          "refdes": "U3",
+          "pin": "38"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "I2S_DATA",
+      "pins": [
+        {
+          "refdes": "R32",
+          "pin": "2"
+        },
+        {
+          "refdes": "U2",
+          "pin": "2"
+        },
+        {
+          "refdes": "U3",
+          "pin": "2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_L_FILT_P",
+      "pins": [
+        {
+          "refdes": "U2",
+          "pin": "5"
+        },
+        {
+          "refdes": "C49",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_L_FILT_N",
+      "pins": [
+        {
+          "refdes": "U2",
+          "pin": "6"
+        },
+        {
+          "refdes": "C50",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_L_VA",
+      "pins": [
+        {
+          "refdes": "U2",
+          "pin": "7"
+        },
+        {
+          "refdes": "R36",
+          "pin": "2"
+        },
+        {
+          "refdes": "C41",
+          "pin": "1"
+        },
+        {
+          "refdes": "C42",
+          "pin": "1"
+        },
+        {
+          "refdes": "C49",
+          "pin": "2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_L_NEG_VA",
+      "pins": [
+        {
+          "refdes": "U2",
+          "pin": "9"
+        },
+        {
+          "refdes": "C50",
+          "pin": "2"
+        },
+        {
+          "refdes": "C51",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_L_FLYP_VA",
+      "pins": [
+        {
+          "refdes": "U2",
+          "pin": "10"
+        },
+        {
+          "refdes": "C52",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_L_FLYN_VA",
+      "pins": [
+        {
+          "refdes": "U2",
+          "pin": "11"
+        },
+        {
+          "refdes": "C52",
+          "pin": "2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_LP",
+      "pins": [
+        {
+          "refdes": "U2",
+          "pin": "14"
+        },
+        {
+          "refdes": "JP1",
+          "pin": "1"
+        },
+        {
+          "refdes": "JP2",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_LN",
+      "pins": [
+        {
+          "refdes": "U2",
+          "pin": "16"
+        },
+        {
+          "refdes": "JP3",
+          "pin": "1"
+        },
+        {
+          "refdes": "JP4",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_L_VCPF_N",
+      "pins": [
+        {
+          "refdes": "U2",
+          "pin": "18"
+        },
+        {
+          "refdes": "C56",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_L_FLYN_CP",
+      "pins": [
+        {
+          "refdes": "U2",
+          "pin": "20"
+        },
+        {
+          "refdes": "C54",
+          "pin": "2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_L_VCPF_P",
+      "pins": [
+        {
+          "refdes": "U2",
+          "pin": "21"
+        },
+        {
+          "refdes": "C55",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_L_FLYC_CP",
+      "pins": [
+        {
+          "refdes": "U2",
+          "pin": "23"
+        },
+        {
+          "refdes": "C53",
+          "pin": "2"
+        },
+        {
+          "refdes": "C54",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_L_FLYP_CP",
+      "pins": [
+        {
+          "refdes": "U2",
+          "pin": "24"
+        },
+        {
+          "refdes": "C53",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_R_FILT_P",
+      "pins": [
+        {
+          "refdes": "U3",
+          "pin": "5"
+        },
+        {
+          "refdes": "C65",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_R_FILT_N",
+      "pins": [
+        {
+          "refdes": "U3",
+          "pin": "6"
+        },
+        {
+          "refdes": "C66",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_R_VA",
+      "pins": [
+        {
+          "refdes": "U3",
+          "pin": "7"
+        },
+        {
+          "refdes": "R37",
+          "pin": "2"
+        },
+        {
+          "refdes": "C57",
+          "pin": "1"
+        },
+        {
+          "refdes": "C58",
+          "pin": "1"
+        },
+        {
+          "refdes": "C65",
+          "pin": "2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_R_NEG_VA",
+      "pins": [
+        {
+          "refdes": "U3",
+          "pin": "9"
+        },
+        {
+          "refdes": "C66",
+          "pin": "2"
+        },
+        {
+          "refdes": "C67",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_R_FLYP_VA",
+      "pins": [
+        {
+          "refdes": "U3",
+          "pin": "10"
+        },
+        {
+          "refdes": "C68",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_R_FLYN_VA",
+      "pins": [
+        {
+          "refdes": "U3",
+          "pin": "11"
+        },
+        {
+          "refdes": "C68",
+          "pin": "2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_RP",
+      "pins": [
+        {
+          "refdes": "U3",
+          "pin": "14"
+        },
+        {
+          "refdes": "JP5",
+          "pin": "1"
+        },
+        {
+          "refdes": "JP6",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_RN",
+      "pins": [
+        {
+          "refdes": "U3",
+          "pin": "16"
+        },
+        {
+          "refdes": "JP7",
+          "pin": "1"
+        },
+        {
+          "refdes": "JP8",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_R_VCPF_N",
+      "pins": [
+        {
+          "refdes": "U3",
+          "pin": "18"
+        },
+        {
+          "refdes": "C72",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_R_FLYN_CP",
+      "pins": [
+        {
+          "refdes": "U3",
+          "pin": "20"
+        },
+        {
+          "refdes": "C70",
+          "pin": "2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_R_VCPF_P",
+      "pins": [
+        {
+          "refdes": "U3",
+          "pin": "21"
+        },
+        {
+          "refdes": "C71",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_R_FLYC_CP",
+      "pins": [
+        {
+          "refdes": "U3",
+          "pin": "23"
+        },
+        {
+          "refdes": "C69",
+          "pin": "2"
+        },
+        {
+          "refdes": "C70",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DAC_R_FLYP_CP",
+      "pins": [
+        {
+          "refdes": "U3",
+          "pin": "24"
+        },
+        {
+          "refdes": "C69",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "BUF_LP_RAW",
+      "pins": [
+        {
+          "refdes": "U5",
+          "pin": "1"
+        },
+        {
+          "refdes": "U5",
+          "pin": "2"
+        },
+        {
+          "refdes": "R38",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "BUF_LP_IN",
+      "pins": [
+        {
+          "refdes": "U5",
+          "pin": "3"
+        },
+        {
+          "refdes": "JP2",
+          "pin": "2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "BUF_LN_IN",
+      "pins": [
+        {
+          "refdes": "U5",
+          "pin": "5"
+        },
+        {
+          "refdes": "JP4",
+          "pin": "2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "BUF_LN_RAW",
+      "pins": [
+        {
+          "refdes": "U5",
+          "pin": "6"
+        },
+        {
+          "refdes": "U5",
+          "pin": "7"
+        },
+        {
+          "refdes": "R39",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "BUF_LP",
+      "pins": [
+        {
+          "refdes": "R38",
+          "pin": "2"
+        },
+        {
+          "refdes": "JP1",
+          "pin": "3"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DRV_LP",
+      "pins": [
+        {
+          "refdes": "JP1",
+          "pin": "2"
+        },
+        {
+          "refdes": "TP1",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "BUF_LN",
+      "pins": [
+        {
+          "refdes": "R39",
+          "pin": "2"
+        },
+        {
+          "refdes": "JP3",
+          "pin": "3"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DRV_LN",
+      "pins": [
+        {
+          "refdes": "JP3",
+          "pin": "2"
+        },
+        {
+          "refdes": "TP2",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "BUF_RP_RAW",
+      "pins": [
+        {
+          "refdes": "U8",
+          "pin": "1"
+        },
+        {
+          "refdes": "U8",
+          "pin": "2"
+        },
+        {
+          "refdes": "R40",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "BUF_RP_IN",
+      "pins": [
+        {
+          "refdes": "U8",
+          "pin": "3"
+        },
+        {
+          "refdes": "JP6",
+          "pin": "2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "BUF_RN_IN",
+      "pins": [
+        {
+          "refdes": "U8",
+          "pin": "5"
+        },
+        {
+          "refdes": "JP8",
+          "pin": "2"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "BUF_RN_RAW",
+      "pins": [
+        {
+          "refdes": "U8",
+          "pin": "6"
+        },
+        {
+          "refdes": "U8",
+          "pin": "7"
+        },
+        {
+          "refdes": "R41",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "BUF_RP",
+      "pins": [
+        {
+          "refdes": "R40",
+          "pin": "2"
+        },
+        {
+          "refdes": "JP5",
+          "pin": "3"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DRV_RP",
+      "pins": [
+        {
+          "refdes": "JP5",
+          "pin": "2"
+        },
+        {
+          "refdes": "TP3",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "BUF_RN",
+      "pins": [
+        {
+          "refdes": "R41",
+          "pin": "2"
+        },
+        {
+          "refdes": "JP7",
+          "pin": "3"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    },
+    {
+      "name": "DRV_RN",
+      "pins": [
+        {
+          "refdes": "JP7",
+          "pin": "2"
+        },
+        {
+          "refdes": "TP4",
+          "pin": "1"
+        }
+      ],
+      "is_power": false,
+      "is_ground": false
+    }
+  ],
+  "open_questions": [
+    "Battery specification; RF tuning; charge termination / USB power policy; output power verification; final driver-wire pad size and strain relief."
+  ]
+}

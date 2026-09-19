@@ -2,9 +2,917 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid 89d30dcd-e991-4e32-b460-83f5b37a2b9e)
-	(paper "A4")
+	(uuid "89d30dcd-e991-4e32-b460-83f5b37a2b9e")
+	(paper "A3")
+	(title_block
+		(title "HD800 WIRELESS | system overview")
+		(date "2026-09-16")
+		(rev "A - REVIEW DRAFT")
+		(comment 1 "NOT FOR FABRICATION - see DESIGN_NOTES.md")
+	)
 	(lib_symbols)
+	(text "No headphone jack or BGA audio muxes: four solder pads wire directly to the installed drivers."
+		(exclude_from_sim no)
+		(at 20 203 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left top)
+		)
+		(uuid "1163d581-483a-5da6-ac2f-bec786e054d4")
+	)
+	(text "Functional draft: six connected circuit sheets, custom symbols, netlist validation and review notes."
+		(exclude_from_sim no)
+		(at 20 196 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left top)
+		)
+		(uuid "13732363-ae8b-5492-a203-39494c4275b0")
+	)
+	(text "USB / 2.4GHz -> nRF5340 -> I2S + I2C -> two CS43131 DACs -> 4 balanced audio legs"
+		(exclude_from_sim no)
+		(at 20 151 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left top)
+		)
+		(uuid "162ad0eb-529f-5880-bbd1-9d72d097ca6a")
+	)
+	(text "Battery -> 1.8V buck / DAC VP     Turbo only: Q1 -> positive rail + LM2776 negative rail"
+		(exclude_from_sim no)
+		(at 20 169 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left top)
+		)
+		(uuid "4319480e-8ec5-5622-a50a-dd6fe21a8297")
+	)
+	(text "Dual CS43131 / nRF5340 / assembly-configured Eco or Turbo"
+		(exclude_from_sim no)
+		(at 20 26 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left top)
+		)
+		(uuid "71fb244b-d385-56c4-9c14-c40d33c2aef6")
+	)
+	(text "DESIGN STATUS / REQUIRED BEFORE PCB RELEASE"
+		(exclude_from_sim no)
+		(at 20 185 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "75bb64ef-ecb0-50c9-9d6d-3382828ee012")
+	)
+	(text "HD800 WIRELESS"
+		(exclude_from_sim no)
+		(at 20 18 0)
+		(effects
+			(font
+				(size 3.8 3.8)
+			)
+			(justify left top)
+		)
+		(uuid "8cd7d5e2-46b0-5036-bd1b-b8f74a8af964")
+	)
+	(text "ECO assembly: DACs -> configuration links -> drivers     TURBO assembly: DACs -> 4 buffers -> links -> drivers"
+		(exclude_from_sim no)
+		(at 20 160 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left top)
+		)
+		(uuid "8e7791d2-70ad-5d45-8b1f-fc315a4233a8")
+	)
+	(text "250mW output, 130dBA system performance, <10ms latency and 33/47h runtime are targets, not measurements."
+		(exclude_from_sim no)
+		(at 20 217 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left top)
+		)
+		(uuid "c2adade4-0fbc-5cee-b1e6-63a6a24808f3")
+	)
+	(text "RF matching, battery thermal/current limits, USB-C charge policy and amplifier load stability need validation."
+		(exclude_from_sim no)
+		(at 20 210 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left top)
+		)
+		(uuid "d6cd0a4a-5e17-5be0-aace-313bea127c99")
+	)
+	(text "See DESIGN_NOTES.md for Eco/Turbo population links, sources and remaining release blockers."
+		(exclude_from_sim no)
+		(at 20 224 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left top)
+		)
+		(uuid "dd54d338-9aff-5f7c-8b7e-6d69bbd01091")
+	)
+	(text "SIGNAL FLOW"
+		(exclude_from_sim no)
+		(at 20 141 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "f5f10626-ea6a-5967-a36c-23a610aacb45")
+	)
+	(wire
+		(pts
+			(xy 139.7 102.87) (xy 129.54 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c407121-54b5-4072-8693-22f5c131b31d")
+	)
+	(wire
+		(pts
+			(xy 259.08 99.06) (xy 276.86 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12004d05-ff91-45a3-8266-19a9c8ec9f77")
+	)
+	(wire
+		(pts
+			(xy 262.89 104.14) (xy 276.86 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2910aa48-8d6b-4097-9909-a84ffa189d16")
+	)
+	(wire
+		(pts
+			(xy 261.62 83.82) (xy 261.62 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ad032cc-d31e-43b9-9336-8063265623b3")
+	)
+	(wire
+		(pts
+			(xy 264.16 59.69) (xy 264.16 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37fdb7fa-e365-47f4-9d0e-60806d67c9ef")
+	)
+	(wire
+		(pts
+			(xy 261.62 54.61) (xy 276.86 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40d299ca-da1c-44ba-9754-9d08ae87883f")
+	)
+	(wire
+		(pts
+			(xy 264.16 59.69) (xy 276.86 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42f34424-3399-4342-9f49-1c5600efe51a")
+	)
+	(wire
+		(pts
+			(xy 260.35 82.55) (xy 133.35 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "452c3172-47c1-40a2-b608-be03104e2653")
+	)
+	(wire
+		(pts
+			(xy 265.43 106.68) (xy 265.43 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5db6504b-ca39-471e-8943-5c5ec33e8b2b")
+	)
+	(wire
+		(pts
+			(xy 262.89 93.98) (xy 259.08 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60af99a7-9e47-4a48-95c4-c4874d83d73c")
+	)
+	(wire
+		(pts
+			(xy 276.86 52.07) (xy 260.35 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61b3c21c-c757-4db4-8d66-82ec8c082ce7")
+	)
+	(wire
+		(pts
+			(xy 265.43 127) (xy 139.7 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62bb7873-b91f-45d7-9335-ac6234405377")
+	)
+	(wire
+		(pts
+			(xy 262.89 57.15) (xy 262.89 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62d37ce6-c28a-4a24-87a0-a9f4bebf4597")
+	)
+	(wire
+		(pts
+			(xy 133.35 95.25) (xy 129.54 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b676879-2c67-461a-a309-7448c0a982e3")
+	)
+	(wire
+		(pts
+			(xy 142.24 100.33) (xy 142.24 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e6291be-b86f-4a82-ae2d-3b8d6d100793")
+	)
+	(wire
+		(pts
+			(xy 259.08 96.52) (xy 264.16 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d5164ed-4f4f-45b7-a698-4e6440c44cc3")
+	)
+	(wire
+		(pts
+			(xy 276.86 57.15) (xy 262.89 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97ed42fe-e906-4d84-acd4-225bc901f76f")
+	)
+	(wire
+		(pts
+			(xy 134.62 97.79) (xy 134.62 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a27624a9-1f36-4eb0-b66f-f8c6b2dcd39d")
+	)
+	(wire
+		(pts
+			(xy 265.43 106.68) (xy 276.86 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a27b3009-6c84-41bc-9b18-a142c40ec760")
+	)
+	(wire
+		(pts
+			(xy 260.35 52.07) (xy 260.35 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b140ade4-0f5e-447e-8dc0-dc4a86cc60c4")
+	)
+	(wire
+		(pts
+			(xy 142.24 124.46) (xy 262.89 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba20ac1a-de7e-49c7-8094-dd8a41e82ccd")
+	)
+	(wire
+		(pts
+			(xy 259.08 101.6) (xy 276.86 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba4d0b04-a126-4fae-9e5d-fa54968956e6")
+	)
+	(wire
+		(pts
+			(xy 129.54 97.79) (xy 134.62 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca46110f-a1bd-4987-9dac-ddb499eced80")
+	)
+	(wire
+		(pts
+			(xy 133.35 82.55) (xy 133.35 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb01cf3f-b441-476f-924f-7cd56098ffc2")
+	)
+	(wire
+		(pts
+			(xy 129.54 100.33) (xy 142.24 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbeb1f71-da16-4798-8efd-0c690fbb3708")
+	)
+	(wire
+		(pts
+			(xy 134.62 83.82) (xy 261.62 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f55d767b-d901-4435-8eb5-64fac1a15ca8")
+	)
+	(wire
+		(pts
+			(xy 262.89 124.46) (xy 262.89 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f937468f-c698-4f1e-a066-b634f023b695")
+	)
+	(wire
+		(pts
+			(xy 139.7 127) (xy 139.7 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe9e0b20-1ffd-4472-a546-7aa14828e221")
+	)
+	(label "INT_R"
+		(at 267.97 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "385d39cd-fb39-4608-9e7d-7bd5420dd563")
+	)
+	(label "R_P"
+		(at 270.51 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4b2f1c4e-a7d7-45b1-8b44-9d9efb678e5e")
+	)
+	(label "R_N"
+		(at 270.51 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "90d3f4e1-bfdb-45c9-9bf1-13653aa7ca36")
+	)
+	(label "L_N"
+		(at 270.51 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9d95c02c-74d4-4b02-99b3-52aa4663498c")
+	)
+	(label "L_P"
+		(at 270.51 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b5e831a2-0881-4fd8-bc97-7b1bbe46eefb")
+	)
+	(label "INT_L"
+		(at 267.97 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7f008fe-f697-43e0-819e-1a33b2eb57bc")
+	)
+	(sheet
+		(at 20 93)
+		(size 109.54 27)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0b179a54-e48b-53c6-a8a3-a45582e839ab")
+		(property "Sheetname" "04 DAC L"
+			(at 20 91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "04_DAC_Left.kicad_sch"
+			(at 20 122 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(pin "INT" output
+			(at 129.54 97.79 0)
+			(uuid "58e99c24-3afc-4e01-a4b0-776c5bb56422")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DAC_N" output
+			(at 129.54 102.87 0)
+			(uuid "2826f510-1628-4141-93da-30fd167fb329")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DAC_P" output
+			(at 129.54 100.33 0)
+			(uuid "d192ec11-57d8-4fca-820f-d417c2b9471a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ADR" passive
+			(at 129.54 95.25 0)
+			(uuid "05fd6266-5326-4863-a4f2-cb365d1e627e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "HD800-wireless"
+				(path "/89d30dcd-e991-4e32-b460-83f5b37a2b9e"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 276.86 48)
+		(size 109.14 27)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "2df60d33-9df0-5117-87a2-3f989449f29a")
+		(property "Sheetname" "03 MCU RF"
+			(at 276.86 46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "03_MCU_RF.kicad_sch"
+			(at 276.86 77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(pin "INT_L" input
+			(at 276.86 54.61 180)
+			(uuid "3038582c-3be0-4a4a-baef-b644a63d7cf4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "INT_R" input
+			(at 276.86 59.69 180)
+			(uuid "1c1cdcfe-3348-41ed-a852-16bff87929a4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AD0" passive
+			(at 276.86 52.07 180)
+			(uuid "c8933355-7059-4350-a692-ab20342ba6d3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AD1" passive
+			(at 276.86 57.15 180)
+			(uuid "d2850a53-7852-4801-a397-a1baa17ef861")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "HD800-wireless"
+				(path "/89d30dcd-e991-4e32-b460-83f5b37a2b9e"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 149.08 92.71)
+		(size 110 27)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "89370d16-a2c6-47bc-8845-58c11afde804")
+		(property "Sheetname" "05 DAC R"
+			(at 149.08 90.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "04_DAC_Left.kicad_sch"
+			(at 149.08 121.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(pin "INT" output
+			(at 259.08 96.52 0)
+			(uuid "e093ece9-9c19-451b-80c9-8f5c3b71899a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DAC_N" output
+			(at 259.08 101.6 0)
+			(uuid "26eb7665-7173-48ab-a0a9-0472b3eb87f7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DAC_P" output
+			(at 259.08 99.06 0)
+			(uuid "35da11dd-3a8c-4ef5-8486-4bae2b02b110")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ADR" passive
+			(at 259.08 93.98 0)
+			(uuid "c141dba5-012e-459c-8efc-20f0cea1a829")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "HD800-wireless"
+				(path "/89d30dcd-e991-4e32-b460-83f5b37a2b9e"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 276.86 92.492)
+		(size 109.902 27)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "97598ef3-a45e-58e8-9576-699d09198929")
+		(property "Sheetname" "06 Balanced Output"
+			(at 276.86 90.492 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "06_Balanced_Output.kicad_sch"
+			(at 276.86 121.492 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(pin "R-" input
+			(at 276.86 101.6 180)
+			(uuid "d64537a4-9edb-4ffc-81a2-0697b94e4cdf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "L-" input
+			(at 276.86 106.68 180)
+			(uuid "a765d7fc-9408-4938-b969-c1418feebb33")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "L+" input
+			(at 276.86 104.14 180)
+			(uuid "31f52e4c-2ae2-44f9-9bca-2891d8eee723")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "R+" input
+			(at 276.86 99.06 180)
+			(uuid "8a0ac060-eeb5-4cf6-9e59-464a7b851844")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "HD800-wireless"
+				(path "/89d30dcd-e991-4e32-b460-83f5b37a2b9e"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 148 48)
+		(size 110 27)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "aa8f104f-0427-5016-940d-ba3d32a4c4f9")
+		(property "Sheetname" "02 Power"
+			(at 148 46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "02_Power.kicad_sch"
+			(at 148 77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "HD800-wireless"
+				(path "/89d30dcd-e991-4e32-b460-83f5b37a2b9e"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 20 48)
+		(size 110 27)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d5171146-81ac-50f5-b93a-ab681b83857c")
+		(property "Sheetname" "01 USB Charging"
+			(at 20 46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "01_USB_Charging.kicad_sch"
+			(at 20 77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "HD800-wireless"
+				(path "/89d30dcd-e991-4e32-b460-83f5b37a2b9e"
+					(page "2")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
