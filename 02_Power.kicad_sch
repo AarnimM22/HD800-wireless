@@ -986,7 +986,7 @@
 	)
 	(text "02 POWER"
 		(exclude_from_sim no)
-		(at 267.97 131.318 0)
+		(at 281.432 154.432 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -995,20 +995,9 @@
 		)
 		(uuid "1d9cf7cc-a4f5-5010-846b-33946d158ec7")
 	)
-	(text "REVIEW DRAFT  |  Labels are electrical connections across all sheets"
-		(exclude_from_sim no)
-		(at 267.97 139.318 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "2398c2b9-aaf4-5a58-a86a-2e542e27f4d7")
-	)
 	(text "AMP_EN high turns Q2/Q1 on; LM2776 generates approximately -VBAT, subject to load droop."
 		(exclude_from_sim no)
-		(at 259.08 255.016 0)
+		(at 260.858 226.314 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1019,7 +1008,7 @@
 	)
 	(text "SW2 closes to force system OFF. Battery charger remains independent."
 		(exclude_from_sim no)
-		(at 259.08 265.176 0)
+		(at 260.858 236.474 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1030,7 +1019,7 @@
 	)
 	(text "Split rails are battery dependent. Limit output in firmware; >250mW into 18 ohms is NOT validated."
 		(exclude_from_sim no)
-		(at 259.08 260.096 0)
+		(at 260.858 231.394 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1041,7 +1030,7 @@
 	)
 	(text "TLV62568: 0.6V x (1 + 200k/100k) = 1.8V. L1 remains 2.2uH."
 		(exclude_from_sim no)
-		(at 259.08 249.936 0)
+		(at 260.858 221.234 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1115,6 +1104,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d4d54046-4828-416a-8931-dd8a338852ec")
+	)
+	(junction
+		(at 220.98 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec44168f-7cb1-433b-8a1a-46061ffcb1ab")
 	)
 	(junction
 		(at 436.88 180.34)
@@ -1294,6 +1289,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 153.67) (xy 220.98 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65a92a37-c5ea-4082-bcb7-d6c856de6a91")
+	)
+	(wire
+		(pts
 			(xy 407.67 182.88) (xy 407.67 180.34)
 		)
 		(stroke
@@ -1331,6 +1336,16 @@
 			(type default)
 		)
 		(uuid "756861b2-2c65-4c03-b27e-0cf8e29de2e1")
+	)
+	(wire
+		(pts
+			(xy 219.71 152.4) (xy 220.98 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75d2ee56-fe49-4f09-85e5-115d34d01c15")
 	)
 	(wire
 		(pts
@@ -1391,6 +1406,26 @@
 			(type default)
 		)
 		(uuid "7e8889b7-a102-48e0-97d9-20a28a11da4e")
+	)
+	(wire
+		(pts
+			(xy 220.98 142.24) (xy 218.44 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7eb72a8f-8936-4f67-9252-831f5c694bfe")
+	)
+	(wire
+		(pts
+			(xy 220.98 163.83) (xy 220.98 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8005a1e9-df02-4b92-8813-84d9bde4cf1f")
 	)
 	(wire
 		(pts
@@ -1584,6 +1619,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 152.4) (xy 220.98 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee687f7e-cdd3-46c2-aac1-980c9234e2bd")
+	)
+	(wire
+		(pts
 			(xy 448.31 195.58) (xy 448.31 201.93)
 		)
 		(stroke
@@ -1632,6 +1677,16 @@
 		)
 		(uuid "f6b9e856-9685-4a78-b0de-085ca5bbf324")
 	)
+	(wire
+		(pts
+			(xy 220.98 143.51) (xy 220.98 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffc1bb47-cbae-44ca-9a74-98046789fbf8")
+	)
 	(global_label "VBAT"
 		(shape bidirectional)
 		(at 276.86 176.53 180)
@@ -1678,6 +1733,28 @@
 			)
 		)
 	)
+	(global_label "VBAT"
+		(shape bidirectional)
+		(at 218.44 142.24 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "5c8251da-d3ee-4535-95be-30e60d157297")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 218.44 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
 	(global_label "SYS_EN"
 		(shape bidirectional)
 		(at 292.1 191.77 180)
@@ -1690,6 +1767,28 @@
 		(uuid "6793eb8c-c01f-51e1-a043-6cd198af31ce")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 292.1 191.77 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT_ADC"
+		(shape bidirectional)
+		(at 219.71 152.4 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "8cb599e0-0e82-41a7-9f98-352911ccbbf8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 219.71 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2263,6 +2362,98 @@
 			(project "HD800-wireless"
 				(path "/89d30dcd-e991-4e32-b460-83f5b37a2b9e/aa8f104f-0427-5016-940d-ba3d32a4c4f9"
 					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 220.98 157.48 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "47428f6e-6b67-457b-aeb1-862640129dbb")
+		(property "Reference" "R11"
+			(at 218.186 156.464 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 219.202 158.496 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 220.98 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 157.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Design_note" "100k 1%"
+			(at 220.98 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8e9fff51-8967-4b9f-8f5e-21cb845af1f0")
+		)
+		(pin "2"
+			(uuid "e4e6909e-1fbd-4880-8da0-311489e4733b")
+		)
+		(instances
+			(project "HD800-wireless"
+				(path "/89d30dcd-e991-4e32-b460-83f5b37a2b9e/aa8f104f-0427-5016-940d-ba3d32a4c4f9"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -2959,6 +3150,98 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 220.98 147.32 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7dd5b411-5465-4163-bc78-daeab9b49e48")
+		(property "Reference" "R17"
+			(at 218.186 146.304 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "510k"
+			(at 219.202 148.336 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 220.98 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Design_note" "100k 1%"
+			(at 220.98 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ef8b850f-5e35-4c34-8398-20f48ac06d58")
+		)
+		(pin "2"
+			(uuid "53190814-e44d-4f7c-a3ba-008b4b739926")
+		)
+		(instances
+			(project "HD800-wireless"
+				(path "/89d30dcd-e991-4e32-b460-83f5b37a2b9e/aa8f104f-0427-5016-940d-ba3d32a4c4f9"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 232.41 184.15 0)
 		(unit 1)
 		(body_style 1)
@@ -3388,6 +3671,84 @@
 			(project "HD800-wireless"
 				(path "/89d30dcd-e991-4e32-b460-83f5b37a2b9e/aa8f104f-0427-5016-940d-ba3d32a4c4f9"
 					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 220.98 163.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1e1f556-6fc3-4868-b689-11d8c4f11755")
+		(property "Reference" "#PWR094"
+			(at 220.98 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 220.98 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 220.98 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7dd59021-bb42-46e0-8617-896299eb96a0")
+		)
+		(instances
+			(project "HD800-wireless"
+				(path "/89d30dcd-e991-4e32-b460-83f5b37a2b9e/aa8f104f-0427-5016-940d-ba3d32a4c4f9"
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)

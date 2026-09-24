@@ -1250,17 +1250,6 @@
 		)
 		(uuid "08a47d2d-3575-5474-8f26-429e09de46e9")
 	)
-	(text "REVIEW DRAFT  |  Labels are electrical connections across all sheets"
-		(exclude_from_sim no)
-		(at 177.8 45.846 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "2398c2b9-aaf4-5a58-a86a-2e542e27f4d7")
-	)
 	(text "Supply filtering, bypass and charge-pump network"
 		(exclude_from_sim no)
 		(at 176.53 60.96 0)
@@ -1296,7 +1285,7 @@
 	)
 	(text "04 DAC"
 		(exclude_from_sim no)
-		(at 177.8 37.846 0)
+		(at 177.038 49.022 0)
 		(effects
 			(font
 				(size 2.54 2.54)

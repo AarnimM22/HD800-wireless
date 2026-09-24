@@ -135,61 +135,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "L-/R- are driven outputs. OPA1688 current does not establish the original 250mW/18ohm target."
-		(exclude_from_sim no)
-		(at 242.062 191.77 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "202ca5ba-28df-5fff-895c-fdd7873aa4c7")
-	)
-	(text "REVIEW DRAFT  |  Labels are electrical connections across all sheets"
-		(exclude_from_sim no)
-		(at 245.364 98.424 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "2398c2b9-aaf4-5a58-a86a-2e542e27f4d7")
-	)
-	(text "Eco may omit U5/U8, U4, Q1/Q2 and amplifier support parts entirely. Turbo populates them."
-		(exclude_from_sim no)
-		(at 242.062 181.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "3713fce1-f9c8-58c1-921e-4fa13b381c90")
-	)
-	(text "TP1-TP4 are direct driver solder pads. There is no jack and no common audio return."
-		(exclude_from_sim no)
-		(at 242.062 186.69 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "47f9053c-228e-59be-b2b5-19c44c7eb576")
-	)
-	(text "No analog muxes: headphone type is selected once with solder links before installation."
-		(exclude_from_sim no)
-		(at 242.062 166.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "5cdf20f1-9350-521b-b3a0-eda6b2f910e7")
-	)
 	(text "06 BALANCED OUTPUT"
 		(exclude_from_sim no)
 		(at 245.364 90.424 0)
@@ -200,39 +145,6 @@
 			(justify left top)
 		)
 		(uuid "7fd63cd3-25b8-5f67-bad4-b9706d391314")
-	)
-	(text "TURBO / planar: bridge each 3-pad selector 2-3; close all four TURBO INPUT links; JP9=2-3."
-		(exclude_from_sim no)
-		(at 242.062 176.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "93cf423f-db4b-5b54-b9c1-7d0c2975535b")
-	)
-	(text "ECO / HD800: bridge each 3-pad selector 1-2; leave all four TURBO INPUT links open; JP9=1-2."
-		(exclude_from_sim no)
-		(at 242.062 171.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "ad1a2ee3-7f67-5979-8af5-9bfc30a25470")
-	)
-	(text "Configuration links and JP9 must agree before power-up; this design does not hot-switch modes."
-		(exclude_from_sim no)
-		(at 242.062 196.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "e1b500bf-1439-5084-95ea-cbcb1b3c77bd")
 	)
 	(wire
 		(pts
