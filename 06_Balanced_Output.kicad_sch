@@ -327,7 +327,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "647bac71-72b0-503f-a712-d98dd66e9441")
 		(property "Reference" "TP4"
 			(at 261.112 119.38 90)
@@ -349,7 +349,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1.5x3mm"
+		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical"
 			(at 254 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -413,7 +413,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "64cfc935-59a1-5ca5-92b1-019e5f0d79ed")
 		(property "Reference" "TP3"
 			(at 261.112 114.3 90)
@@ -435,7 +435,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1.5x3mm"
+		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical"
 			(at 254 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -499,7 +499,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "8cf2dd77-57ab-5264-addf-92c3b9c3765f")
 		(property "Reference" "TP2"
 			(at 261.112 108.966 90)
@@ -521,7 +521,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1.5x3mm"
+		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical"
 			(at 254 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -585,7 +585,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "af5fc7a4-e87f-5c00-8c33-31df83721248")
 		(property "Reference" "TP1"
 			(at 261.112 104.14 90)
@@ -607,7 +607,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1.5x3mm"
+		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical"
 			(at 254 104.14 0)
 			(hide yes)
 			(show_name no)

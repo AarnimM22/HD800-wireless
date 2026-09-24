@@ -1,0 +1,14 @@
+.bench/
+firmware/third_party/etsi/
+firmware/third_party/lc3plus/
+firmware/third_party/liblc3/
+firmware/third_party/opus/
+firmware/third_party/libsbc/
+firmware/third_party/wavpack-stream/
+firmware/third_party/*.tar.gz
+firmware/third_party/*.zip
+firmware/third_party/*-index.html
+firmware/listening/**/sources/
+firmware/listening/**/*.wav
+firmware/listening/**/*.lc3fast
+firmware/listening/**/*.dll

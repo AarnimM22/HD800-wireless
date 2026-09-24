@@ -4028,10 +4028,6 @@
 		(uuid "88eeae95-7221-5b1e-8533-b3e5cce07691")
 	)
 	(no_connect
-		(at 326.39 271.78)
-		(uuid "8ad48bca-e335-5005-8578-86b3fd677d52")
-	)
-	(no_connect
 		(at 326.39 198.12)
 		(uuid "8aea4d7c-5118-50ac-8d31-f1a86234b214")
 	)
@@ -4475,6 +4471,16 @@
 	)
 	(wire
 		(pts
+			(xy 326.39 271.78) (xy 330.2 271.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c8008b7-37fe-4887-9bc3-aac9a916ef83")
+	)
+	(wire
+		(pts
 			(xy 83.82 157.48) (xy 83.82 156.21)
 		)
 		(stroke
@@ -4515,7 +4521,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 226.06) (xy 328.93 226.06)
+			(xy 326.39 226.06) (xy 330.2 226.06)
 		)
 		(stroke
 			(width 0)
@@ -5754,7 +5760,7 @@
 		(uuid "6cadf244-0847-467c-8dc0-585687a55bd4")
 	)
 	(label "ACC_INT2"
-		(at 328.93 226.06 0)
+		(at 330.2 226.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5909,6 +5915,30 @@
 			)
 		)
 	)
+	(global_label "USB_DET"
+		(shape passive)
+		(at 330.2 271.78 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "227407e8-5a97-49e0-811d-631af26bf728")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 339.3121 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "VDD_1V8"
 		(shape bidirectional)
 		(at 160.02 154.94 0)
@@ -6045,6 +6075,28 @@
 			)
 		)
 	)
+	(global_label "VBAT"
+		(shape bidirectional)
+		(at 331.47 170.18 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "4a356b94-b96b-48a2-b66f-b3b2ec94daaf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 331.47 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
 	(global_label "I2S_DATA"
 		(shape bidirectional)
 		(at 356.87 238.76 0)
@@ -6079,28 +6131,6 @@
 		(uuid "5a590907-9952-5476-abdf-b42ce4a4cab8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 331.47 284.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT_ADC"
-		(shape bidirectional)
-		(at 331.47 170.18 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "60518ebb-56d1-51ce-b426-2a4c8ead1563")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 331.47 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6808,7 +6838,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V X7R"
+		(property "Voltage" ""
 			(at 303.72 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6819,7 +6849,7 @@
 				(justify left)
 			)
 		)
-		(property "Design_note" "100nF / 10V"
+		(property "Design_note" ""
 			(at 299.72 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -6910,7 +6940,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V X7R"
+		(property "Voltage" ""
 			(at 354.52 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6921,7 +6951,7 @@
 				(justify left)
 			)
 		)
-		(property "Design_note" "100nF / 10V"
+		(property "Design_note" ""
 			(at 350.52 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -7012,7 +7042,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V X7R"
+		(property "Voltage" ""
 			(at 338.01 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7023,7 +7053,7 @@
 				(justify left)
 			)
 		)
-		(property "Design_note" "100nF / 10V"
+		(property "Design_note" ""
 			(at 334.01 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -7071,7 +7101,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "0R"
 			(at 205.74 260.35 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7194,7 +7224,7 @@
 				)
 			)
 		)
-		(property "Design_note" "22R"
+		(property "Design_note" ""
 			(at 350.52 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -7718,7 +7748,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V X7R"
+		(property "Voltage" ""
 			(at 320.23 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7729,7 +7759,7 @@
 				(justify left)
 			)
 		)
-		(property "Design_note" "100nF / 10V"
+		(property "Design_note" ""
 			(at 316.23 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -7820,7 +7850,7 @@
 				)
 			)
 		)
-		(property "Design_note" "22R"
+		(property "Design_note" ""
 			(at 350.52 238.76 0)
 			(hide yes)
 			(show_name no)
@@ -8067,7 +8097,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V X7R"
+		(property "Voltage" ""
 			(at 241.49 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8078,7 +8108,7 @@
 				(justify left)
 			)
 		)
-		(property "Design_note" "100nF / 10V"
+		(property "Design_note" ""
 			(at 237.49 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -8247,7 +8277,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V X7R"
+		(property "Voltage" ""
 			(at 287.21 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8258,7 +8288,7 @@
 				(justify left)
 			)
 		)
-		(property "Design_note" "100nF / 10V"
+		(property "Design_note" ""
 			(at 283.21 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -9202,7 +9232,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V X7R"
+		(property "Voltage" ""
 			(at 271.97 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9213,7 +9243,7 @@
 				(justify left)
 			)
 		)
-		(property "Design_note" "100nF / 10V"
+		(property "Design_note" ""
 			(at 267.97 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -9551,7 +9581,7 @@
 				)
 			)
 		)
-		(property "Design_note" "4.7k"
+		(property "Design_note" ""
 			(at 350.52 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -9642,7 +9672,7 @@
 				)
 			)
 		)
-		(property "Design_note" "4.7k"
+		(property "Design_note" ""
 			(at 337.82 248.92 0)
 			(hide yes)
 			(show_name no)
@@ -10191,7 +10221,7 @@
 				)
 			)
 		)
-		(property "Design_note" "0R / antenna tuning"
+		(property "Design_note" ""
 			(at 228.6 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -10598,7 +10628,7 @@
 				)
 			)
 		)
-		(property "Design_note" "22R"
+		(property "Design_note" ""
 			(at 350.52 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -10735,7 +10765,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 367.03 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -10767,7 +10797,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V X7R"
+		(property "Voltage" ""
 			(at 371.03 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10778,7 +10808,7 @@
 				(justify left)
 			)
 		)
-		(property "Design_note" "4.7uF / 10V"
+		(property "Design_note" ""
 			(at 367.03 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -10869,7 +10899,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V X7R"
+		(property "Voltage" ""
 			(at 251.65 255.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10971,7 +11001,7 @@
 				)
 			)
 		)
-		(property "Design_note" "10k"
+		(property "Design_note" ""
 			(at 238.76 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -11062,7 +11092,7 @@
 				)
 			)
 		)
-		(property "Design_note" "4.7k"
+		(property "Design_note" ""
 			(at 350.52 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -11400,7 +11430,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V X7R"
+		(property "Voltage" ""
 			(at 245.3 295.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11411,7 +11441,7 @@
 				(justify left)
 			)
 		)
-		(property "Design_note" "100nF / 10V"
+		(property "Design_note" ""
 			(at 241.3 292.1 0)
 			(hide yes)
 			(show_name no)
@@ -11994,8 +12024,9 @@
 				)
 			)
 		)
-		(property "Voltage" "10V X7R"
+		(property "Voltage" ""
 			(at 259.27 295.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12005,7 +12036,7 @@
 				(justify left)
 			)
 		)
-		(property "Design_note" "1uF / 10V"
+		(property "Design_note" ""
 			(at 255.27 292.1 0)
 			(hide yes)
 			(show_name no)
@@ -12096,7 +12127,7 @@
 				)
 			)
 		)
-		(property "Design_note" "22R"
+		(property "Design_note" ""
 			(at 350.52 223.52 0)
 			(hide yes)
 			(show_name no)
@@ -12278,7 +12309,7 @@
 				)
 			)
 		)
-		(property "Design_note" "4.7k"
+		(property "Design_note" ""
 			(at 345.44 248.92 0)
 			(hide yes)
 			(show_name no)
@@ -12369,7 +12400,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V X7R"
+		(property "Voltage" ""
 			(at 231.33 295.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12380,7 +12411,7 @@
 				(justify left)
 			)
 		)
-		(property "Design_note" "4.7uF / 10V"
+		(property "Design_note" ""
 			(at 227.33 292.1 0)
 			(hide yes)
 			(show_name no)
@@ -12549,7 +12580,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V X7R"
+		(property "Voltage" ""
 			(at 251.65 227.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12651,7 +12682,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V X7R"
+		(property "Voltage" ""
 			(at 256.73 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12662,7 +12693,7 @@
 				(justify left)
 			)
 		)
-		(property "Design_note" "100nF / 10V"
+		(property "Design_note" ""
 			(at 252.73 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -12831,7 +12862,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V X7R"
+		(property "Voltage" ""
 			(at 238.95 227.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12901,7 +12932,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 383.54 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -12933,7 +12964,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V X7R"
+		(property "Voltage" ""
 			(at 387.54 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12944,7 +12975,7 @@
 				(justify left)
 			)
 		)
-		(property "Design_note" "4.7uF / 10V"
+		(property "Design_note" ""
 			(at 383.54 114.3 0)
 			(hide yes)
 			(show_name no)

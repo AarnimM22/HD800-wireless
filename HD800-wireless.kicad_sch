@@ -11,28 +11,6 @@
 		(comment 1 "NOT FOR FABRICATION - see DESIGN_NOTES.md")
 	)
 	(lib_symbols)
-	(text "No headphone jack or BGA audio muxes: four solder pads wire directly to the installed drivers."
-		(exclude_from_sim no)
-		(at 20 203 0)
-		(effects
-			(font
-				(size 1.4 1.4)
-			)
-			(justify left top)
-		)
-		(uuid "1163d581-483a-5da6-ac2f-bec786e054d4")
-	)
-	(text "Functional draft: six connected circuit sheets, custom symbols, netlist validation and review notes."
-		(exclude_from_sim no)
-		(at 20 196 0)
-		(effects
-			(font
-				(size 1.4 1.4)
-			)
-			(justify left top)
-		)
-		(uuid "13732363-ae8b-5492-a203-39494c4275b0")
-	)
 	(text "USB / 2.4GHz -> nRF5340 -> I2S + I2C -> two CS43131 DACs -> 4 balanced audio legs"
 		(exclude_from_sim no)
 		(at 20 151 0)
@@ -44,18 +22,7 @@
 		)
 		(uuid "162ad0eb-529f-5880-bbd1-9d72d097ca6a")
 	)
-	(text "Battery -> 1.8V buck / DAC VP     Turbo only: Q1 -> positive rail + LM2776 negative rail"
-		(exclude_from_sim no)
-		(at 20 169 0)
-		(effects
-			(font
-				(size 1.4 1.4)
-			)
-			(justify left top)
-		)
-		(uuid "4319480e-8ec5-5622-a50a-dd6fe21a8297")
-	)
-	(text "Dual CS43131 / nRF5340 / assembly-configured Eco or Turbo"
+	(text "Dual CS43131 / nRF5340"
 		(exclude_from_sim no)
 		(at 20 26 0)
 		(effects
@@ -65,17 +32,6 @@
 			(justify left top)
 		)
 		(uuid "71fb244b-d385-56c4-9c14-c40d33c2aef6")
-	)
-	(text "DESIGN STATUS / REQUIRED BEFORE PCB RELEASE"
-		(exclude_from_sim no)
-		(at 20 185 0)
-		(effects
-			(font
-				(size 2 2)
-			)
-			(justify left top)
-		)
-		(uuid "75bb64ef-ecb0-50c9-9d6d-3382828ee012")
 	)
 	(text "HD800 WIRELESS"
 		(exclude_from_sim no)
@@ -87,50 +43,6 @@
 			(justify left top)
 		)
 		(uuid "8cd7d5e2-46b0-5036-bd1b-b8f74a8af964")
-	)
-	(text "ECO assembly: DACs -> configuration links -> drivers     TURBO assembly: DACs -> 4 buffers -> links -> drivers"
-		(exclude_from_sim no)
-		(at 20 160 0)
-		(effects
-			(font
-				(size 1.4 1.4)
-			)
-			(justify left top)
-		)
-		(uuid "8e7791d2-70ad-5d45-8b1f-fc315a4233a8")
-	)
-	(text "250mW output, 130dBA system performance, <10ms latency and 33/47h runtime are targets, not measurements."
-		(exclude_from_sim no)
-		(at 20 217 0)
-		(effects
-			(font
-				(size 1.4 1.4)
-			)
-			(justify left top)
-		)
-		(uuid "c2adade4-0fbc-5cee-b1e6-63a6a24808f3")
-	)
-	(text "RF matching, battery thermal/current limits, USB-C charge policy and amplifier load stability need validation."
-		(exclude_from_sim no)
-		(at 20 210 0)
-		(effects
-			(font
-				(size 1.4 1.4)
-			)
-			(justify left top)
-		)
-		(uuid "d6cd0a4a-5e17-5be0-aace-313bea127c99")
-	)
-	(text "See DESIGN_NOTES.md for Eco/Turbo population links, sources and remaining release blockers."
-		(exclude_from_sim no)
-		(at 20 224 0)
-		(effects
-			(font
-				(size 1.4 1.4)
-			)
-			(justify left top)
-		)
-		(uuid "dd54d338-9aff-5f7c-8b7e-6d69bbd01091")
 	)
 	(text "SIGNAL FLOW"
 		(exclude_from_sim no)

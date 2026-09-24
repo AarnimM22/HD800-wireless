@@ -3366,7 +3366,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2R 1%"
+		(property "Value" "2R"
 			(at 122.11 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)

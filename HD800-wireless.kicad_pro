@@ -565,7 +565,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "HD800-wireless.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -724,7 +724,7 @@
         "uuid": "89d30dcd-e991-4e32-b460-83f5b37a2b9e"
       }
     ],
-    "used_designators": "AE1,L2,#PWR1-83,C5-8,C10,C12-15,C20,C40,C57-72,J2,J4-5,R7-10,R15-16,R37,R42-43,U3-5,U7",
+    "used_designators": "AE1,L2,#PWR1-93,C5-8,C10,C12-15,C20,C40,C57-72,J2,J4-5,R7-10,R15-16,R37,R42-43,U3-5,U7",
     "variants": []
   },
   "sheets": [
